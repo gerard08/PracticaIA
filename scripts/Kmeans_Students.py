@@ -38,7 +38,10 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        self.X = np.random.rand(100, 5)
+        X = np.array(X)
+        if X.astype() != 'float64':
+            X = X.astype('float64')
+            print("convertot")
 
 
 

@@ -1,8 +1,9 @@
 import unittest
 import pickle
-import Kmeans as km
+import Kmeans_Students as km
 import numpy as np
-from Kmeans import *
+#import Kmeans_Students
+from Kmeans_Students import *
 from utils import *
 
 
@@ -11,7 +12,7 @@ class TestCases(unittest.TestCase):
 
     def setUp(self):
         np.random.seed(123)
-        with open('./test/test_cases_kmeans.pkl', 'rb') as f:
+        with open('../test/test_cases_kmeans.pkl', 'rb') as f:
             self.test_cases = pickle.load(f)
 
     def test_NIU(self):
