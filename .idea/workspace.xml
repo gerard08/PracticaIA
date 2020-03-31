@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Kmeans_Students.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Kmeans_Students.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -98,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585587751963</updated>
       <workItem from="1585587753432" duration="2936000" />
-      <workItem from="1585660931762" duration="11095000" />
+      <workItem from="1585660931762" duration="11246000" />
     </task>
     <task id="LOCAL-00001" summary="He arreglat uns errors que no permetien passar el testCases">
       <created>1585669307153</created>
@@ -114,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585675178475</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="He fet la funció _init_X">
+      <created>1585676677310</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585676677310</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,14 +133,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="He fet la funció _init_X" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Notifications" timestamp="1585676728071">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Notifications/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585676728071" />
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585668688940">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585668688940" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585675177591">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585676715706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675177591" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585676715706" />
     <state width="414" height="393" key="GridCell.Tab.0.bottom" timestamp="1585675831913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -170,10 +181,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="414" height="393" key="GridCell.Tab.1.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675833780" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585675183056">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1585676815394">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675183056" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585676815394" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585676679924">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585676679924" />
     <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1585660933521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
