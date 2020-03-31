@@ -18,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="gerard_08 &lt;gerardmaresp@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZrCJC4BJ8s7htuyH9NThvcXwYO" />
@@ -93,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585587751963</updated>
       <workItem from="1585587753432" duration="2936000" />
-      <workItem from="1585660931762" duration="9573000" />
+      <workItem from="1585660931762" duration="11095000" />
     </task>
     <task id="LOCAL-00001" summary="He arreglat uns errors que no permetien passar el testCases">
       <created>1585669307153</created>
@@ -102,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585669307153</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="He fet la funció _init_X">
+      <created>1585675178475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585675178475</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,57 +122,58 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="He arreglat uns errors que no permetien passar el testCases" />
-    <option name="LAST_COMMIT_MESSAGE" value="He arreglat uns errors que no permetien passar el testCases" />
+    <MESSAGE value="He fet la funció _init_X" />
+    <option name="LAST_COMMIT_MESSAGE" value="He fet la funció _init_X" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585668688940">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585668688940" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585669306513">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585675177591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585669306513" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1585675138027">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675177591" />
+    <state width="414" height="393" key="GridCell.Tab.0.bottom" timestamp="1585675831913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675138027" />
+    <state width="414" height="393" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675831913" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585596892102" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1585675138027">
+    <state width="414" height="393" key="GridCell.Tab.0.center" timestamp="1585675831913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675138027" />
+    <state width="414" height="393" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675831913" />
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585596892101" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1585675138026">
+    <state width="414" height="393" key="GridCell.Tab.0.left" timestamp="1585675831913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675138026" />
+    <state width="414" height="393" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675831913" />
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585596892101" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1585675138027">
+    <state width="414" height="393" key="GridCell.Tab.0.right" timestamp="1585675831913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675138027" />
+    <state width="414" height="393" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675831913" />
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585596892102" />
-    <state width="414" height="393" key="GridCell.Tab.1.bottom" timestamp="1585675025156">
+    <state width="414" height="393" key="GridCell.Tab.1.bottom" timestamp="1585675833780">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.1.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675025156" />
-    <state width="414" height="393" key="GridCell.Tab.1.center" timestamp="1585675025156">
+    <state width="414" height="393" key="GridCell.Tab.1.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675833780" />
+    <state width="414" height="393" key="GridCell.Tab.1.center" timestamp="1585675833780">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.1.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675025156" />
-    <state width="414" height="393" key="GridCell.Tab.1.left" timestamp="1585675025156">
+    <state width="414" height="393" key="GridCell.Tab.1.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675833780" />
+    <state width="414" height="393" key="GridCell.Tab.1.left" timestamp="1585675833780">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.1.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675025156" />
-    <state width="414" height="393" key="GridCell.Tab.1.right" timestamp="1585675025156">
+    <state width="414" height="393" key="GridCell.Tab.1.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675833780" />
+    <state width="414" height="393" key="GridCell.Tab.1.right" timestamp="1585675833780">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.1.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675025156" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585669320999">
+    <state width="414" height="393" key="GridCell.Tab.1.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675833780" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585675183056">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585669320999" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585675183056" />
     <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1585660933521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -171,11 +184,12 @@
       <configuration name="tests">
         <watch expression="self.test_cases['shape'][ix]" language="Python" />
         <watch expression="km.X ==self.test_cases['shape'][ix]" language="Python" />
+        <watch expression="X.dtype" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_X.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_X Coverage Results" MODIFIED="1585675138012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_X.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_X Coverage Results" MODIFIED="1585675831788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases.coverage" NAME="Unittests for TestCases_kmeans.TestCases Coverage Results" MODIFIED="1585667662391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
 </project>

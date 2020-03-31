@@ -34,7 +34,6 @@ class KMeans:
                     if matrix has more than 2 dimensions, the dimensionality of the smaple space is the length of
                     the last dimension
         """
-        #######################################################
 
         #Si les dades de X no son de tipus float, les convertim a float
         if X.dtype != 'float64':
