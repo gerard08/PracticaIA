@@ -35,13 +35,19 @@ class KMeans:
                     the last dimension
         """
         #######################################################
-        ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
-        ##  AND CHANGE FOR YOUR OWN CODE
-        #######################################################
-        X = np.array(X)
-        if X.astype() != 'float64':
+
+        #Si les dades de X no son de tipus float, les convertim a float
+        if X.dtype != 'float64':
             X = X.astype('float64')
-            print("convertot")
+
+        #basicament ens demanen que tornem la matriu que ens passen com una matriu de dues dimensions
+        #on les files siguin els pixels i les columnes el RGB, o com a minim així ho he entès jo
+
+        #calculem el numero de pixels que hi ha a la matriu fent Fila x Columna
+        npixels = X.shape[0] * X.shape[1]
+
+        #ho convertim en una matriu de dues dimensions mitjançant l'eina "reshape"
+        self.X = X.reshape(npixels, X.shape[len(X.shape)-1])
 
 
 
