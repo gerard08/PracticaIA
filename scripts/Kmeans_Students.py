@@ -42,11 +42,12 @@ class KMeans:
         #basicament ens demanen que tornem la matriu que ens passen com una matriu de dues dimensions
         #on les files siguin els pixels i les columnes el RGB, o com a minim així ho he entès jo
 
-        #calculem el numero de pixels que hi ha a la matriu fent Fila x Columna
-        npixels = X.shape[0] * X.shape[1]
+        if len(X.shape) != 2:
+            #calculem el numero de pixels que hi ha a la matriu fent Fila x Columna
+            npixels = X.shape[0] * X.shape[1]
 
-        #ho convertim en una matriu de dues dimensions mitjançant l'eina "reshape"
-        self.X = X.reshape(npixels, X.shape[len(X.shape)-1])
+            #ho convertim en una matriu de dues dimensions mitjançant l'eina "reshape"
+            self.X = X.reshape(npixels, X.shape[len(X.shape)-1])
 
 
 
