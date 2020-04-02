@@ -95,17 +95,26 @@ class KMeans:
             diferents entre ells'''
 
 #es necessita optimització
+
+            #creo una matriu amb la mida del output pero buida (plena de 0s)
             punts = np.zeros(shape = (self.K, self.X.shape[1]))
+
             afegits = 0
             i = 0
 
+            #mentres no haguem afegit tants elements com per completar totes les files de la matriu
             while afegits != self.K:
                 afegir = True
-                for p in punts:
-                    if (p == self.X[i]).all():
+                p = 0
+                #comprovem que no s'hagi afegit abans el mateix pixel
+                while p < self.K and afegir == True:
+                    if (punts[p] == self.X[i]).all():
+                        #si ja el tenim a la matriu no l'afegim
                             afegir = False
+                    p+=1
 
                 if afegir:
+                    #igualem la fila amb el pixel a afegir
                     punts[afegits] = self.X[i]
                     afegits += 1
                 i += 1
