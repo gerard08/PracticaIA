@@ -78,52 +78,56 @@ class KMeans:
         #############################################################
 
 
+    def afegir(self, desti, element):   #funció feta per mi per comprovar la repetició d'elements dins la matriu
+        p = 0
+        afegir = True
+
+        while p < self.K and afegir == True:
+            if (desti[p] == element).all():
+                afegir = False
+            p += 1
+        return afegir
+
 
 
     def _init_centroids(self):
         """
         Initialization of centroids
         """
+        # creo una matriu amb la mida del output pero buida (plena de 0s)
+        punts = np.zeros(shape=(self.K, self.X.shape[1]))
 
-        #######################################################
-        ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
-        ##  AND CHANGE FOR YOUR OWN CODE
-        #######################################################
+        afegits = i = 0
+
         if self.options['km_init'].lower() == 'first':
-
-            '''L’opció ’first’ assigna als centroides els primers K punts de la imatge X que siguin
-            diferents entre ells'''
-
-#es necessita optimització
-
-            #creo una matriu amb la mida del output pero buida (plena de 0s)
-            punts = np.zeros(shape = (self.K, self.X.shape[1]))
-
-            afegits = 0
-            i = 0
 
             #mentres no haguem afegit tants elements com per completar totes les files de la matriu
             while afegits != self.K:
-                afegir = True
-                p = 0
-                #comprovem que no s'hagi afegit abans el mateix pixel
-                while p < self.K and afegir == True:
-                    if (punts[p] == self.X[i]).all():
-                        #si ja el tenim a la matriu no l'afegim
-                            afegir = False
-                    p+=1
 
-                if afegir:
+                if self.afegir(punts, self.X[i]):
                     #igualem la fila amb el pixel a afegir
                     punts[afegits] = self.X[i]
                     afegits += 1
                 i += 1
-                afegir = True
-            self.centroids = punts
 
-        else:
+
+        elif self.options['km_init'].lower() == 'random':
+            while afegits != self.K:
+
+                if self.afegir(punts, np.random.rand(self.K, self.X.shape[1])):
+                    # igualem la fila amb el pixel a afegir
+                    punts[afegits] = np.random.rand(self.K, self.X.shape[1])
+                    afegits += 1
+                i += 1
+
+
+
+        else:   #pendent de fer
+
             self.centroids = np.random.rand(self.K, self.X.shape[1])
             self.old_centroids =np.random.rand(self.K, self.X.shape[1])
+
+        self.centroids = punts
 
 
     def get_labels(self):
