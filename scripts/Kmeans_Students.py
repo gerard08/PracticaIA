@@ -90,8 +90,28 @@ class KMeans:
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
         if self.options['km_init'].lower() == 'first':
-            self.centroids = np.random.rand(self.K, self.X.shape[1])
-            self.old_centroids = np.random.rand(self.K, self.X.shape[1])
+
+            '''L’opció ’first’ assigna als centroides els primers K punts de la imatge X que siguin
+            diferents entre ells'''
+
+#es necessita optimització
+            punts = np.zeros(shape = (self.K, self.X.shape[1]))
+            afegits = 0
+            i = 0
+
+            while afegits != self.K:
+                afegir = True
+                for p in punts:
+                    if (p == self.X[i]).all():
+                            afegir = False
+
+                if afegir:
+                    punts[afegits] = self.X[i]
+                    afegits += 1
+                i += 1
+                afegir = True
+            self.centroids = punts
+
         else:
             self.centroids = np.random.rand(self.K, self.X.shape[1])
             self.old_centroids =np.random.rand(self.K, self.X.shape[1])
