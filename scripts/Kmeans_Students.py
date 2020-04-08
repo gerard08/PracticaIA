@@ -3,6 +3,8 @@ __group__ = 'GrupZZ'
 
 import numpy as np
 import utils
+import math
+
 
 class KMeans:
 
@@ -120,8 +122,6 @@ class KMeans:
                     afegits += 1
                 i += 1
 
-
-
         else:   #pendent de fer
 
             self.centroids = np.random.rand(self.K, self.X.shape[1])
@@ -204,12 +204,26 @@ def distance(X, C):
         dist: PxK numpy array position ij is the distance between the
         i-th point of the first set an the j-th point of the second set
     """
+    #creo una matriu buida de tamany PxK
+    dist = np.zeros((X.shape[0], C.shape[0]))
+    i = 0
+
+    for num, centroid in enumerate(C):
+        for pixel in X:
+            dist[i][num] = math.sqrt(pow((pixel[0] - centroid[0]), 2) + pow((pixel[1] - centroid[1]), 2) + pow((pixel[2] - centroid[2]), 2))
+            if i < X.shape[0] - 1:
+                i += 1
+            else:
+                i = 0
+
+    return dist
+
 
     #########################################################
     ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
     ##  AND CHANGE FOR YOUR OWN CODE
     #########################################################
-    return np.random.rand(X.shape[0], C.shape[0])
+    #return np.random.rand(X.shape[0], C.shape[0])
 
 
 def get_colors(centroids):
