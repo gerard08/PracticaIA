@@ -161,12 +161,10 @@ class KMeans:
 
         for n, cent in enumerate(self.labels):
             values = [self.X[n][0], self.X[n][1], self.X[n][2], 1]
+            #vaig sumant els valors de RGB
             if cent in centroids.keys():
-                #vaig sumant valors de R
                 centroids[cent][0] += values[0]
-                #vaig sumant valors de G
                 centroids[cent][1] += values[1]
-                #vaig sumant valors de B
                 centroids[cent][2] += values[2]
                 #nº elements sumats (per fer despres mitjana)
                 centroids[cent][3] += 1
