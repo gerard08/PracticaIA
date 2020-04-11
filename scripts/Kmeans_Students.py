@@ -4,6 +4,7 @@ __group__ = 'GrupZZ'
 import numpy as np
 import utils
 import math
+import copy
 
 
 class KMeans:
@@ -141,7 +142,6 @@ class KMeans:
         dist = distance(self.X, self.centroids)
         self.labels = np.argmin(dist, axis=1)
 
-        #self.labels = np.random.randint(self.K, size=self.X.shape[0])
 
     def get_centroids(self):
         """
@@ -151,7 +151,34 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        pass
+
+
+        self.old_centroids = copy.deepcopy(self.centroids)
+
+        #calculo els nous centroids
+
+        centroids = {}
+
+        for n, cent in enumerate(self.labels):
+            values = [self.X[n][0], self.X[n][1], self.X[n][2], 1]
+            if cent in centroids.keys():
+                #vaig sumant valors de R
+                centroids[cent][0] += values[0]
+                #vaig sumant valors de G
+                centroids[cent][1] += values[1]
+                #vaig sumant valors de B
+                centroids[cent][2] += values[2]
+                #nº elements sumats (per fer despres mitjana)
+                centroids[cent][3] += 1
+            else:
+                #si no hi es l'afegeixo
+                centroids[cent] = values
+        #faig mitjana
+        for i, cent in enumerate(self.centroids):
+            cent[0] = centroids[i][0]/centroids[i][3]
+            cent[1] = centroids[i][1] / centroids[i][3]
+            cent[2] = centroids[i][2] / centroids[i][3]
+
 
     def converges(self):
         """
