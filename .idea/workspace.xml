@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="He fet la funció de la distància entre pixels">
+    <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Kmeans_Students.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Kmeans_Students.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/TestCases_kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/TestCases_kmeans.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1ZrCJC4BJ8s7htuyH9NThvcXwYO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -172,7 +172,7 @@
       <workItem from="1586376039385" duration="2166000" />
       <workItem from="1586378238041" duration="51000" />
       <workItem from="1586539129592" duration="620000" />
-      <workItem from="1586614052521" duration="5334000" />
+      <workItem from="1586614052521" duration="7251000" />
     </task>
     <task id="LOCAL-00001" summary="He arreglat uns errors que no permetien passar el testCases">
       <created>1585669307153</created>
@@ -237,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586376892781</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="He fet funció per saber quin és el centroide del que està mes a prop cada pixel">
+      <created>1586620522097</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586620522097</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +256,8 @@
     <MESSAGE value="He fet la funció init centroids, pero necessita optimització" />
     <MESSAGE value="He arreglat la funció dels centroids" />
     <MESSAGE value="He fet la funció de la distància entre pixels" />
-    <option name="LAST_COMMIT_MESSAGE" value="He fet la funció de la distància entre pixels" />
+    <MESSAGE value="He fet funció per saber quin és el centroide del que està mes a prop cada pixel" />
+    <option name="LAST_COMMIT_MESSAGE" value="He fet funció per saber quin és el centroide del que està mes a prop cada pixel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585676728071">
@@ -260,34 +268,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
-    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1586618969053">
+    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1586620520894">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586618969053" />
+    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586620520894" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586376891827" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1586378284019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586378284019" />
-    <state width="414" height="393" key="GridCell.Tab.0.bottom" timestamp="1586619386989">
+    <state width="1323" height="352" key="GridCell.Tab.0.bottom" timestamp="1586623437280">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619386989" />
+    <state width="1323" height="352" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586623437280" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586544584543" />
-    <state width="414" height="393" key="GridCell.Tab.0.center" timestamp="1586619386989">
+    <state width="1323" height="352" key="GridCell.Tab.0.center" timestamp="1586623437280">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619386989" />
+    <state width="1323" height="352" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586623437280" />
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586544584543" />
-    <state width="414" height="393" key="GridCell.Tab.0.left" timestamp="1586619386989">
+    <state width="1323" height="352" key="GridCell.Tab.0.left" timestamp="1586623437280">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619386989" />
+    <state width="1323" height="352" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586623437280" />
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586544584543" />
-    <state width="414" height="393" key="GridCell.Tab.0.right" timestamp="1586619386989">
+    <state width="1323" height="352" key="GridCell.Tab.0.right" timestamp="1586623437280">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619386989" />
+    <state width="1323" height="352" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586623437280" />
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586544584543" />
     <state width="414" height="393" key="GridCell.Tab.1.bottom" timestamp="1586619388923">
       <screen x="0" y="0" width="1366" height="728" />
@@ -350,10 +358,10 @@
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585676815394" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1586376897451">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1586620524853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851429155" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586620524853" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586376897451" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1586618405298">
       <screen x="0" y="0" width="1366" height="728" />
@@ -365,9 +373,10 @@
     </state>
     <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585848613298" />
     <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586614058795" />
-    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586377336582">
+    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586622826155">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586622826155" />
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586377336582" />
     <state x="951" y="379" width="404" height="613" key="dock-window-1" timestamp="1586376454395">
       <screen x="0" y="0" width="1366" height="728" />
@@ -474,7 +483,7 @@
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_in_TestCases_kmeans_py.coverage" NAME="Unittests in TestCases_kmeans.py Coverage Results" MODIFIED="1585833454696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_centroids.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_centroids Coverage Results" MODIFIED="1586366971312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_NIU.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_NIU Coverage Results" MODIFIED="1586366963456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_labels.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_labels Coverage Results" MODIFIED="1586619386779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_labels.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_labels Coverage Results" MODIFIED="1586623437266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1586618929636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
 </project>

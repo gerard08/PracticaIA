@@ -139,8 +139,7 @@ class KMeans:
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
         dist = distance(self.X, self.centroids)
-        self.get_labels = np.argmin(dist, axis=1)
-
+        self.labels = np.argmin(dist, axis=1)
 
         #self.labels = np.random.randint(self.K, size=self.X.shape[0])
 
