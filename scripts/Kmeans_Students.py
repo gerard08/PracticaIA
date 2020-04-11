@@ -138,7 +138,11 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        self.labels = np.random.randint(self.K, size=self.X.shape[0])
+        dist = distance(self.X, self.centroids)
+        self.get_labels = np.argmin(dist, axis=1)
+
+
+        #self.labels = np.random.randint(self.K, size=self.X.shape[0])
 
     def get_centroids(self):
         """
@@ -207,10 +211,11 @@ def distance(X, C):
     #creo una matriu buida de tamany PxK
     dist = np.zeros((X.shape[0], C.shape[0]))
     i = 0
-
+    #from scipy.spatial import distance
     for num, centroid in enumerate(C):
         for pixel in X:
             dist[i][num] = math.sqrt(pow((pixel[0] - centroid[0]), 2) + pow((pixel[1] - centroid[1]), 2) + pow((pixel[2] - centroid[2]), 2))
+            #dist[i][num] = distance.euclidean(pixel, centroid)
             if i < X.shape[0] - 1:
                 i += 1
             else:

@@ -2,7 +2,6 @@ import unittest
 import pickle
 import Kmeans_Students as km
 import numpy as np
-#import Kmeans_Students
 from Kmeans_Students import *
 from utils import *
 

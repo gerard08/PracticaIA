@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
+    <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="He fet la funció de la distància entre pixels">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Kmeans_Students.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Kmeans_Students.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/TestCases_kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/TestCases_kmeans.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lavacalola" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,7 +66,7 @@
       <recent name="C:\Users\ger-m\PycharmProjects\Practica2IA" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for TestCases_kmeans.TestCases.test_distance">
+  <component name="RunManager" selected="Python tests.Unittests for TestCases_kmeans.TestCases.test_get_labels">
     <configuration name="Unittests for TestCases_kmeans.TestCases.test_NIU" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Practica2IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +94,21 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;TestCases_kmeans.TestCases.test_distance&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for TestCases_kmeans.TestCases.test_get_labels" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Practica2IA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestCases_kmeans.TestCases.test_get_labels&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -125,28 +142,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in TestCases_kmeans.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Practica2IA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/scripts/TestCases_kmeans.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for TestCases_kmeans.TestCases.test_get_labels" />
         <item itemvalue="Python tests.Unittests for TestCases_kmeans.TestCases.test_distance" />
         <item itemvalue="Python tests.Unittests for TestCases_kmeans.TestCases.test_init_centroids" />
         <item itemvalue="Python tests.Unittests for TestCases_kmeans.TestCases.test_init_X" />
         <item itemvalue="Python tests.Unittests for TestCases_kmeans.TestCases.test_NIU" />
-        <item itemvalue="Python tests.Unittests in TestCases_kmeans.py" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +169,10 @@
       <workItem from="1585844937548" duration="624000" />
       <workItem from="1585848613556" duration="2982000" />
       <workItem from="1586366381737" duration="3737000" />
-      <workItem from="1586376039385" duration="821000" />
+      <workItem from="1586376039385" duration="2166000" />
+      <workItem from="1586378238041" duration="51000" />
+      <workItem from="1586539129592" duration="620000" />
+      <workItem from="1586614052521" duration="5334000" />
     </task>
     <task id="LOCAL-00001" summary="He arreglat uns errors que no permetien passar el testCases">
       <created>1585669307153</created>
@@ -225,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585851423551</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="He fet la funció de la distància entre pixels">
+      <created>1586376892781</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586376892781</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,61 +248,67 @@
     <MESSAGE value="He fet la funció _init_X" />
     <MESSAGE value="He fet la funció init centroids, pero necessita optimització" />
     <MESSAGE value="He arreglat la funció dels centroids" />
-    <option name="LAST_COMMIT_MESSAGE" value="He arreglat la funció dels centroids" />
+    <MESSAGE value="He fet la funció de la distància entre pixels" />
+    <option name="LAST_COMMIT_MESSAGE" value="He fet la funció de la distància entre pixels" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585676728071">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Notifications/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585676728071" />
-    <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585668688940">
+    <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586619105229">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585668688940" />
-    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1585851422667">
+    <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
+    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1586618969053">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851422667" />
-    <state width="414" height="393" key="GridCell.Tab.0.bottom" timestamp="1586376815396">
+    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586618969053" />
+    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586376891827" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1586378284019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851601138" />
-    <state width="414" height="393" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586376815396" />
-    <state width="414" height="393" key="GridCell.Tab.0.center" timestamp="1586376815396">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586378284019" />
+    <state width="414" height="393" key="GridCell.Tab.0.bottom" timestamp="1586619386989">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851601138" />
-    <state width="414" height="393" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586376815396" />
-    <state width="414" height="393" key="GridCell.Tab.0.left" timestamp="1586376815396">
+    <state width="414" height="393" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619386989" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586544584543" />
+    <state width="414" height="393" key="GridCell.Tab.0.center" timestamp="1586619386989">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851601138" />
-    <state width="414" height="393" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586376815396" />
-    <state width="414" height="393" key="GridCell.Tab.0.right" timestamp="1586376815396">
+    <state width="414" height="393" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619386989" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586544584543" />
+    <state width="414" height="393" key="GridCell.Tab.0.left" timestamp="1586619386989">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851601138" />
-    <state width="414" height="393" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586376815396" />
-    <state width="414" height="393" key="GridCell.Tab.1.bottom" timestamp="1586376817055">
+    <state width="414" height="393" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619386989" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586544584543" />
+    <state width="414" height="393" key="GridCell.Tab.0.right" timestamp="1586619386989">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.1.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851601138" />
-    <state width="414" height="393" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586376817055" />
-    <state width="414" height="393" key="GridCell.Tab.1.center" timestamp="1586376817055">
+    <state width="414" height="393" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619386989" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586544584543" />
+    <state width="414" height="393" key="GridCell.Tab.1.bottom" timestamp="1586619388923">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.1.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851601138" />
-    <state width="414" height="393" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586376817055" />
-    <state width="414" height="393" key="GridCell.Tab.1.left" timestamp="1586376817055">
+    <state width="414" height="393" key="GridCell.Tab.1.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619388923" />
+    <state width="414" height="393" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586378214849" />
+    <state width="414" height="393" key="GridCell.Tab.1.center" timestamp="1586619388922">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.1.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851601138" />
-    <state width="414" height="393" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586376817055" />
-    <state width="414" height="393" key="GridCell.Tab.1.right" timestamp="1586376817055">
+    <state width="414" height="393" key="GridCell.Tab.1.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619388922" />
+    <state width="414" height="393" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586378214849" />
+    <state width="414" height="393" key="GridCell.Tab.1.left" timestamp="1586619388922">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="414" height="393" key="GridCell.Tab.1.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851601138" />
-    <state width="414" height="393" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586376817055" />
+    <state width="414" height="393" key="GridCell.Tab.1.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619388922" />
+    <state width="414" height="393" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586378214849" />
+    <state width="414" height="393" key="GridCell.Tab.1.right" timestamp="1586619388923">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="414" height="393" key="GridCell.Tab.1.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619388923" />
+    <state width="414" height="393" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586378214849" />
     <state x="951" y="379" width="388" height="545" key="GridCell.Tab.2.bottom" timestamp="1586376122550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -327,23 +345,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="950" y="445" width="388" height="545" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1586369966657" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1585676815394">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1586377629179">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585676815394" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585851429155">
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1586376897451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851429155" />
-    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1586369926840">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586376897451" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1586618405298">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586618405298" />
     <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1586369926840" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1586376041429">
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1586614058795">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585848613298" />
-    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586376041429" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586614058795" />
+    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586377336582">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586377336582" />
     <state x="951" y="379" width="404" height="613" key="dock-window-1" timestamp="1586376454395">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -431,16 +456,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/TestCases_kmeans.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="5" />
+          <line>42</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
-        <watch expression="pow((pixel[0] - centroid[0]),2)" language="Python" />
-        <watch expression="pixel" language="Python" />
-        <watch expression="centroid" language="Python" />
+        <watch expression="self.test_cases['labels'][ix]" language="Python" />
+        <watch expression="self.test_cases['labels']" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -450,6 +474,7 @@
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_in_TestCases_kmeans_py.coverage" NAME="Unittests in TestCases_kmeans.py Coverage Results" MODIFIED="1585833454696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_centroids.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_centroids Coverage Results" MODIFIED="1586366971312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_NIU.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_NIU Coverage Results" MODIFIED="1586366963456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1586376815251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_labels.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_labels Coverage Results" MODIFIED="1586619386779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1586618929636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
 </project>
