@@ -188,7 +188,7 @@ class KMeans:
         #######################################################
 
 
-        # Crec que així ja esta ben fet
+        # Crec que així ja esta ben fet, caldria revisar
         if (self.old_centroids == self.centroids):
             return True
         else:
