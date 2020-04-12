@@ -203,6 +203,16 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
+
+        difference = False
+        ite = 0
+
+        #Comprova si convergeix i si el num d'iteracions es menor al permes
+        while difference != False or ite < self.num_iter:
+            self.get_labels()
+            self.get_centroids()
+            difference = self.converges()
+            ite = ite + 1
         pass
 
     def whitinClassDistance(self):
@@ -229,7 +239,7 @@ class KMeans:
 
 def distance(X, C):
     """
-    Calculates the distance between each pixcel and each centroid
+    Calculates the distance between each pixel and each centroid
     Args:
         X (numpy array): PxD 1st set of data points (usually data points)
         C (numpy array): KxD 2nd set of data points (usually cluster centroids points)
