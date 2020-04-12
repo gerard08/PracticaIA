@@ -189,7 +189,7 @@ class KMeans:
 
 
         # Crec que així ja esta ben fet, caldria revisar
-        if (self.old_centroids == self.centroids):
+        if np.array_equal(self.old_centroids, self.centroids):
             return True
         else:
             return False
