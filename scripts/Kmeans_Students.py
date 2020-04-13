@@ -147,7 +147,7 @@ class KMeans:
         #######################################################
 
 
-        self.old_centroids = copy.deepcopy(self.centroids)
+        if self.centroids is not None : self.old_centroids = copy.deepcopy(self.centroids)
 
         #calculo els nous centroids
 
@@ -198,18 +198,18 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-
+        #self._init_X(self.X)
+        self._init_centroids()
         difference = False
-        ite = 0
+        iter = 0
 
         #Comprova si convergeix i si el num d'iteracions es menor al permes
-        while difference != False or ite < self.num_iter:
+        while difference == False:# or iter <= self.options['max_iter']:
             self.get_labels()
             self.get_centroids()
             difference = self.converges()
-            ite = ite + 1
-        pass
-
+            iter += 1
+        self.num_iter = iter
 
     def whitinClassDistance(self):
         """
@@ -247,6 +247,7 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
+        self._init_centroids()
         cadak = 2
         wcd = np.zeros((1, max_K))
         dec = np.zeros((1, max_K))
