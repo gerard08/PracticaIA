@@ -16,18 +16,14 @@ class KMeans:
                  K (int): Number of cluster
                  options (dict): dictºionary with options
             """
+        #############################################################
+        ##  THIS FUNCTION CAN BE MODIFIED FROM THIS POINT, if needed
+        #############################################################
+
         self.num_iter = 0
         self.K = K
         self._init_X(X)
         self._init_options(options)  # DICT options
-
-    #############################################################
-    ##  THIS FUNCTION CAN BE MODIFIED FROM THIS POINT, if needed
-    #############################################################
-
-
-
-
 
 
     def _init_X(self, X):
@@ -51,7 +47,6 @@ class KMeans:
 
             #ho convertim en una matriu de dues dimensions mitjançant l'eina "reshape"
             self.X = X.reshape(npixels, X.shape[len(X.shape)-1])
-
 
 
     def _init_options(self, options=None):
@@ -90,7 +85,6 @@ class KMeans:
                 afegir = False
             p += 1
         return afegir
-
 
 
     def _init_centroids(self):
@@ -194,6 +188,7 @@ class KMeans:
         else:
             return False
 
+
     def fit(self):
         """
         Runs K-Means algorithm until it converges or until the number
@@ -215,16 +210,34 @@ class KMeans:
             ite = ite + 1
         pass
 
+
     def whitinClassDistance(self):
         """
          returns the whithin class distance of the current clustering
         """
-
         #######################################################
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        return np.random.rand()
+
+        dist = distance(self.X, self.centroids)
+        total_dist = np.zeros(self.X.shape[0], self.centroids.shape[0])
+        total = 0
+
+        #trec la distancia de cada pixel amb el centroide mes proper
+        for pixel, cluster in dist:
+            total_dist[pixel][cluster] = dist.min(1)
+
+        #faig el calcul de intra-class per cada x i faig el total
+        for pixel, cluster in total_dist:
+            total = total + total_dist[pixel][cluster]
+
+        #calcul de la mitjana
+        total = total / total_dist.shape[0]
+
+        wcd = (1 / (self.X.shape[0] * self.X.shape[1])) * (total**2)
+
+        return wcd
 
     def find_bestK(self, max_K):
         """
@@ -234,6 +247,26 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
+        cadak = 2
+        wcd = np.zeros((1, max_K))
+        dec = np.zeros((1, max_K))
+
+        #calcula cada intra-class de cadascuna de les k
+        while cadak <= max_K:
+            self.K = cadak
+            wcd[1][cadak] = self.whitinClassDistance()
+            cadak = cadak + 1
+
+
+        k=3
+
+        #ara es calcula el llindar de la diferencia entre les diferents k
+        while k < max_K:
+            dec[1][k] = 100 - (100 * (wcd[k] / wcd[k-1]))
+            k = k + 1
+
+        #mejor K
+        self.K = dec.max()
         pass
 
 
@@ -248,6 +281,7 @@ def distance(X, C):
         dist: PxK numpy array position ij is the distance between the
         i-th point of the first set an the j-th point of the second set
     """
+
     #creo una matriu buida de tamany PxK
     dist = np.zeros((X.shape[0], C.shape[0]))
     i = 0
