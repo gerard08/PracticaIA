@@ -221,21 +221,15 @@ class KMeans:
         #######################################################
 
         dist = distance(self.X, self.centroids)
-        total_dist = np.zeros(self.X.shape[0], self.centroids.shape[0])
-        total = 0
 
         #trec la distancia de cada pixel amb el centroide mes proper
-        for pixel, cluster in dist:
-            total_dist[pixel][cluster] = dist.min(1)
+        total_dist = dist.min(1)
 
         #faig el calcul de intra-class per cada x i faig el total
-        for pixel, cluster in total_dist:
-            total = total + total_dist[pixel][cluster]
+        total = np.sum(total_dist**2)
 
         #calcul de la mitjana
-        total = total / total_dist.shape[0]
-
-        wcd = (1 / (self.X.shape[0] * self.X.shape[1])) * (total**2)
+        wcd = total / total_dist.shape[0]
 
         return wcd
 
@@ -247,28 +241,27 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        self._init_centroids()
-        cadak = 2
-        wcd = np.zeros((1, max_K))
-        dec = np.zeros((1, max_K))
+        #self._init_centroids()
+        cadak = 0
+        wcd = np.zeros(max_K - 1)
+        dec = np.zeros(max_K - 2)
 
         #calcula cada intra-class de cadascuna de les k
-        while cadak <= max_K:
-            self.K = cadak
-            wcd[1][cadak] = self.whitinClassDistance()
+        while cadak <= max_K - 2:
+            self.K = cadak + 2
+            #self._init_centroids()
+            self.fit()
+            wcd[cadak] = self.whitinClassDistance()
             cadak = cadak + 1
 
-
-        k=3
-
+        k = 1
         #ara es calcula el llindar de la diferencia entre les diferents k
-        while k < max_K:
-            dec[1][k] = 100 - (100 * (wcd[k] / wcd[k-1]))
+        while k+1 < max_K:
+            dec[k-1] = 100 - (100 * (wcd[k] / wcd[k-1]))
             k = k + 1
 
         #mejor K
-        self.K = dec.max()
-        pass
+        self.K = np.where(max(dec))[0][0] + 3
 
 
 def distance(X, C):
