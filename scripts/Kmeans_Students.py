@@ -279,7 +279,7 @@ def distance(X, C):
         dist: PxK numpy array position ij is the distance between the
         i-th point of the first set an the j-th point of the second set
     """
-
+    '''
     # creo una matriu buida de tamany PxK
     dist = np.zeros((X.shape[0], C.shape[0]))
     i = 0
@@ -300,12 +300,8 @@ def distance(X, C):
 
     for num, centroid in enumerate(C):
         for i, pixel in enumerate(X):
-            aux = np.linalg.norm(pixel-centroid)
-            #aux = d.euclidean(pixel, centroid)
-            #if aux is not 0:
+            aux = math.sqrt(pow((pixel[0] - centroid[0]), 2) + pow((pixel[1] - centroid[1]), 2) + pow((pixel[2] - centroid[2]), 2))
             dist[i][num] = aux
-    '''
-
     return dist
 
 
