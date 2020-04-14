@@ -5,6 +5,7 @@ import numpy as np
 import utils
 import math
 import copy
+from scipy.spatial import distance as d
 
 
 class KMeans:
@@ -186,7 +187,7 @@ class KMeans:
 
 
         # Crec que així ja esta ben fet, caldria revisar
-        if np.array_equal(self.old_centroids, self.centroids):
+        if np.allclose(self.old_centroids, self.centroids, self.options['tolerance']):
             return True
         else:
             return False
@@ -201,13 +202,12 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        #self._init_X(self.X)
         self._init_centroids()
         difference = False
         iter = 0
 
         #Comprova si convergeix i si el num d'iteracions es menor al permes
-        while difference == False:# or iter <= self.options['max_iter']:
+        while difference == False and iter <= self.options['max_iter']:
             self.get_labels()
             self.get_centroids()
             difference = self.converges()
@@ -282,19 +282,16 @@ def distance(X, C):
 
     #creo una matriu buida de tamany PxK
     dist = np.zeros((X.shape[0], C.shape[0]))
-    max = X.shape[0] - 1
-    #from scipy.spatial import distance
+
     for num, centroid in enumerate(C):
         for i, pixel in enumerate(X):
-            dist[i][num] = np.linalg.norm(pixel-centroid)
+            #aux = np.linalg.norm(pixel-centroid)
+            aux = d.euclidean(pixel, centroid)
+            if aux is not 0:
+                dist[i][num] = aux
+
+
     return dist
-
-
-    #########################################################
-    ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
-    ##  AND CHANGE FOR YOUR OWN CODE
-    #########################################################
-    #return np.random.rand(X.shape[0], C.shape[0])
 
 
 def get_colors(centroids):
