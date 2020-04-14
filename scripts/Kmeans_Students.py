@@ -315,7 +315,7 @@ def get_colors(centroids):
 
 
     for i in centroids:
-        
+        print()
 
 
     #return list(utils.colors)
