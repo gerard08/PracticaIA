@@ -92,12 +92,11 @@ class KMeans:
         Initialization of centroids
         """
         # creo una matriu amb la mida del output pero buida (plena de 0s)
-        punts = np.zeros(shape=(self.K, self.X.shape[1]))
 
         afegits = i = 0
+        punts = np.zeros(shape=(self.K, self.X.shape[1]))
 
         if self.options['km_init'].lower() == 'first':
-
             #mentres no haguem afegit tants elements com per completar totes les files de la matriu
             while afegits != self.K:
 
@@ -109,13 +108,17 @@ class KMeans:
 
 
         elif self.options['km_init'].lower() == 'random':
+
             while afegits != self.K:
 
-                if self.afegir(punts, np.random.rand(self.K, self.X.shape[1])):
-                    # igualem la fila amb el pixel a afegir
-                    punts[afegits] = np.random.rand(self.K, self.X.shape[1])
+                auxr = np.random.randint(low=0, high=self.X.shape[0], size=(1))[0]
+
+                if self.afegir(punts, self.X[auxr]):
+                    #igualem la fila amb el pixel a afegir
+                    punts[afegits] = self.X[auxr]
                     afegits += 1
                 i += 1
+
 
         else:   #pendent de fer
 
@@ -250,7 +253,7 @@ class KMeans:
             self.K = cadak + 2
             self.fit()
             wcd[cadak] = self.whitinClassDistance()
-            cadak = cadak + 1
+            cadak += 1
         print()
 
         k = 1
@@ -279,17 +282,11 @@ def distance(X, C):
 
     #creo una matriu buida de tamany PxK
     dist = np.zeros((X.shape[0], C.shape[0]))
-    i = 0
+    max = X.shape[0] - 1
     #from scipy.spatial import distance
     for num, centroid in enumerate(C):
-        for pixel in X:
-            dist[i][num] = math.sqrt(pow((pixel[0] - centroid[0]), 2) + pow((pixel[1] - centroid[1]), 2) + pow((pixel[2] - centroid[2]), 2))
-            #dist[i][num] = distance.euclidean(pixel, centroid)
-            if i < X.shape[0] - 1:
-                i += 1
-            else:
-                i = 0
-
+        for i, pixel in enumerate(X):
+            dist[i][num] = np.linalg.norm(pixel-centroid)
     return dist
 
 
