@@ -5,7 +5,7 @@ import numpy as np
 import utils
 import math
 import copy
-from scipy.spatial import distance as d
+from scipy.spatial.distance import cdist
 
 
 class KMeans:
@@ -226,7 +226,7 @@ class KMeans:
         dist = distance(self.X, self.centroids)
 
         #trec la distancia de cada pixel amb el centroide mes proper
-        total_dist = dist.min(1)
+        total_dist = np.amin(dist, axis=1)
 
         #faig el calcul de intra-class per cada x i faig el total
         total = np.sum(total_dist**2)
@@ -263,6 +263,12 @@ class KMeans:
             k = k + 1
         print()
 
+        #ara calculem el llindar del 20%
+
+
+
+
+
         #mejor K
         self.K = dec.argmax() + 3
         print()
@@ -279,30 +285,7 @@ def distance(X, C):
         dist: PxK numpy array position ij is the distance between the
         i-th point of the first set an the j-th point of the second set
     """
-    '''
-    # creo una matriu buida de tamany PxK
-    dist = np.zeros((X.shape[0], C.shape[0]))
-    i = 0
-    # from scipy.spatial import distance
-    for num, centroid in enumerate(C):
-        for pixel in X:
-            dist[i][num] = math.sqrt(
-                pow((pixel[0] - centroid[0]), 2) + pow((pixel[1] - centroid[1]), 2) + pow((pixel[2] - centroid[2]), 2))
-            # dist[i][num] = distance.euclidean(pixel, centroid)
-            if i < X.shape[0] - 1:
-                i += 1
-            else:
-                i = 0
-
-    #creo una matriu buida de tamany PxK
-    '''
-    dist = np.zeros((X.shape[0], C.shape[0]))
-
-    for num, centroid in enumerate(C):
-        for i, pixel in enumerate(X):
-            aux = math.sqrt(pow((pixel[0] - centroid[0]), 2) + pow((pixel[1] - centroid[1]), 2) + pow((pixel[2] - centroid[2]), 2))
-            dist[i][num] = aux
-    return dist
+    return cdist(X, C)
 
 
 def get_colors(centroids):
