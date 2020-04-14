@@ -285,8 +285,8 @@ def distance(X, C):
 
     for num, centroid in enumerate(C):
         for i, pixel in enumerate(X):
-            #aux = np.linalg.norm(pixel-centroid)
-            aux = d.euclidean(pixel, centroid)
+            aux = np.linalg.norm(pixel-centroid)
+            #aux = d.euclidean(pixel, centroid)
             if aux is not 0:
                 dist[i][num] = aux
 
