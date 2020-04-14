@@ -1,8 +1,8 @@
 import unittest
 import pickle
-import Kmeans_Students as km
+import Kmeans as km
 import numpy as np
-from Kmeans_Students import *
+from Kmeans import *
 from utils import *
 
 

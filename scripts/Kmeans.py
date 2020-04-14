@@ -244,13 +244,13 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        '''
-        cadak = 2
+        cadak = 1
 
         self.K = cadak
         self.fit()
         wcd0 = self.whitinClassDistance()
         cadak += 1
+        
         while cadak < max_K:
             self.K = cadak
             self.fit()
@@ -262,22 +262,6 @@ class KMeans:
             else:
                 wcd0 = copy.deepcopy(wcd)
                 cadak += 1
-        '''
-        WCDprevi = 0.0
-        index = 3
-        self.K = 2
-        self.fit()
-        WCD = self.whitinClassDistance()
-        while index < max_K:
-            WCDprevi = WCD
-            self.K = index
-            self.fit()
-            WCD = self.whitinClassDistance()
-            if (1 - (WCD / WCDprevi)) < 0.2:
-                self.K = self.K - 1
-                break
-            else:
-                index = index + 1
 
 
 
