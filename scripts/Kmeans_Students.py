@@ -229,11 +229,11 @@ class KMeans:
         total_dist = np.amin(dist, axis=1)
 
         #faig el calcul de intra-class per cada x i faig el total
-        total = np.sum(total_dist**2)
+        total = np.sum(np.power(total_dist, 2))
 
         #calcul de la mitjana
         wcd = total / total_dist.shape[0]
-
+        print()
         return wcd
 
     def find_bestK(self, max_K):
@@ -244,34 +244,41 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        cadak = 0
-        wcd = np.zeros(max_K - 1)
-        dec = np.zeros(max_K - 2)
+        '''
+        cadak = 2
 
-        #calcula cada intra-class de cadascuna de les k
-        while cadak <= max_K - 2:
-            self.K = cadak + 2
+        self.K = cadak
+        self.fit()
+        wcd0 = self.whitinClassDistance()
+        cadak += 1
+        while cadak < max_K:
+            self.K = cadak
             self.fit()
-            wcd[cadak] = self.whitinClassDistance()
-            cadak += 1
-        print()
+            wcd = self.whitinClassDistance()
+            aux = 100 - (100 * (wcd / wcd0))
+            if aux < 20:
+                self.K = cadak - 1
+                break
+            else:
+                wcd0 = copy.deepcopy(wcd)
+                cadak += 1
+        '''
+        WCDprevi = 0.0
+        index = 3
+        self.K = 2
+        self.fit()
+        WCD = self.whitinClassDistance()
+        while index < max_K:
+            WCDprevi = WCD
+            self.K = index
+            self.fit()
+            WCD = self.whitinClassDistance()
+            if (1 - (WCD / WCDprevi)) < 0.2:
+                self.K = self.K - 1
+                break
+            else:
+                index = index + 1
 
-        k = 1
-        #ara es calcula el llindar de la diferencia entre les diferents k
-        while k+1 < max_K:
-            dec[k-1] = 100 - (100 * (wcd[k] / wcd[k-1]))
-            k = k + 1
-        print()
-
-        #ara calculem el llindar del 20%
-
-
-
-
-
-        #mejor K
-        self.K = dec.argmax() + 3
-        print()
 
 
 def distance(X, C):
