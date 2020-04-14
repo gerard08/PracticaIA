@@ -358,64 +358,68 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
-    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1586858296645">
+    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1586858799668">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="312" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586808087695" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848070270" />
-    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586858296645" />
+    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586858799668" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1586859033339">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1586859033339" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1586378284019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586378284019" />
-    <state width="1323" height="208" key="GridCell.Tab.0.bottom" timestamp="1586858773501">
+    <state width="1323" height="208" key="GridCell.Tab.0.bottom" timestamp="1586859023828">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="368" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
     <state width="539" height="364" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577396" />
-    <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586858773501" />
-    <state width="1323" height="208" key="GridCell.Tab.0.center" timestamp="1586858773501">
+    <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586859023828" />
+    <state width="1323" height="208" key="GridCell.Tab.0.center" timestamp="1586859023828">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="368" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
     <state width="539" height="364" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
-    <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586858773501" />
-    <state width="1323" height="208" key="GridCell.Tab.0.left" timestamp="1586858773501">
+    <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586859023828" />
+    <state width="1323" height="208" key="GridCell.Tab.0.left" timestamp="1586859023828">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="368" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
     <state width="539" height="364" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
-    <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586858773501" />
-    <state width="1323" height="208" key="GridCell.Tab.0.right" timestamp="1586858773501">
+    <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586859023828" />
+    <state width="1323" height="208" key="GridCell.Tab.0.right" timestamp="1586859023828">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="368" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
     <state width="539" height="364" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
-    <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586858773501" />
-    <state width="539" height="364" key="GridCell.Tab.1.bottom" timestamp="1586858613573">
+    <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586859023828" />
+    <state width="539" height="364" key="GridCell.Tab.1.bottom" timestamp="1586858840993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="368" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
     <state width="539" height="364" key="GridCell.Tab.1.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852579469" />
-    <state width="539" height="364" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586858613573" />
-    <state width="539" height="364" key="GridCell.Tab.1.center" timestamp="1586858613572">
+    <state width="539" height="364" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586858840993" />
+    <state width="539" height="364" key="GridCell.Tab.1.center" timestamp="1586858840993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="368" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
     <state width="539" height="364" key="GridCell.Tab.1.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852579469" />
-    <state width="539" height="364" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586858613572" />
-    <state width="539" height="364" key="GridCell.Tab.1.left" timestamp="1586858613572">
+    <state width="539" height="364" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586858840993" />
+    <state width="539" height="364" key="GridCell.Tab.1.left" timestamp="1586858840993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="368" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
     <state width="539" height="364" key="GridCell.Tab.1.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852579469" />
-    <state width="539" height="364" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586858613572" />
-    <state width="539" height="364" key="GridCell.Tab.1.right" timestamp="1586858613573">
+    <state width="539" height="364" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586858840993" />
+    <state width="539" height="364" key="GridCell.Tab.1.right" timestamp="1586858840993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="368" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
     <state width="539" height="364" key="GridCell.Tab.1.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852579469" />
-    <state width="539" height="364" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586858613573" />
+    <state width="539" height="364" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586858840993" />
     <state x="951" y="379" width="388" height="545" key="GridCell.Tab.2.bottom" timestamp="1586376122550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -457,12 +461,12 @@
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586826326029" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1586858301250">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1586858801981">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586725315260" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848074671" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586858301250" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586858801981" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1586827806161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -628,7 +632,7 @@
     <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_get_labels.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_labels Coverage Results" MODIFIED="1586794736153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_centroids.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_centroids Coverage Results" MODIFIED="1586829991830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_color.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_color Coverage Results" MODIFIED="1586824340609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1586858773487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1586859023815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_Kmeans.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_Kmeans Coverage Results" MODIFIED="1586858599069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1586776458164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_converges.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_converges Coverage Results" MODIFIED="1586724211182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />

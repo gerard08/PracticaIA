@@ -280,16 +280,31 @@ def distance(X, C):
         i-th point of the first set an the j-th point of the second set
     """
 
+    # creo una matriu buida de tamany PxK
+    dist = np.zeros((X.shape[0], C.shape[0]))
+    i = 0
+    # from scipy.spatial import distance
+    for num, centroid in enumerate(C):
+        for pixel in X:
+            dist[i][num] = math.sqrt(
+                pow((pixel[0] - centroid[0]), 2) + pow((pixel[1] - centroid[1]), 2) + pow((pixel[2] - centroid[2]), 2))
+            # dist[i][num] = distance.euclidean(pixel, centroid)
+            if i < X.shape[0] - 1:
+                i += 1
+            else:
+                i = 0
+
     #creo una matriu buida de tamany PxK
+    '''
     dist = np.zeros((X.shape[0], C.shape[0]))
 
     for num, centroid in enumerate(C):
         for i, pixel in enumerate(X):
             aux = np.linalg.norm(pixel-centroid)
             #aux = d.euclidean(pixel, centroid)
-            if aux is not 0:
-                dist[i][num] = aux
-
+            #if aux is not 0:
+            dist[i][num] = aux
+    '''
 
     return dist
 
