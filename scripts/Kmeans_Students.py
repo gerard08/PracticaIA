@@ -319,4 +319,13 @@ def get_colors(centroids):
     ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
     ##  AND CHANGE FOR YOUR OWN CODE
     #########################################################
-    return list(utils.colors)
+
+    array_11D = utils.get_color_prob(centroids);
+    labels = np.array[0]
+
+    for i in centroids:
+        
+
+
+    #return list(utils.colors)
+    return labels
