@@ -294,7 +294,20 @@ def get_colors(centroids):
     ##  AND CHANGE FOR YOUR OWN CODE
     #########################################################
 
-    array_11D = utils.get_color_prob(centroids);
+    #Agafem la matriu X (amb els seus valors RGB) i per cada pixel diem quin color representa
+
+
+
+
+    array_11D = utils.get_color_prob(centroids); #això retorna una matriu de (nº centroids) x 11, on 11 son les columnes
+    #i representen la possibilitat de que aquell pixel sigui d'un color en concret
+
+    #Hem de retornar una llista amb les etiquetes de colors que corresponen a cada centroide
+
+    #pista:
+    #colors=np.array(['Red','Orange','Brown','Yellow','Green','Blue','Purple','Pink','Black','Grey','White'])
+
+
     labels = np.array[0]
 
 
