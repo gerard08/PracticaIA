@@ -306,6 +306,7 @@ def get_colors(centroids):
     array_11D = utils.get_color_prob(centroids);
     labels = np.array[0]
 
+
     for i in centroids:
         
 
