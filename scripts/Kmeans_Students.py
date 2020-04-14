@@ -241,7 +241,6 @@ class KMeans:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        #self._init_centroids()
         cadak = 0
         wcd = np.zeros(max_K - 1)
         dec = np.zeros(max_K - 2)
@@ -249,19 +248,21 @@ class KMeans:
         #calcula cada intra-class de cadascuna de les k
         while cadak <= max_K - 2:
             self.K = cadak + 2
-            #self._init_centroids()
             self.fit()
             wcd[cadak] = self.whitinClassDistance()
             cadak = cadak + 1
+        print()
 
         k = 1
         #ara es calcula el llindar de la diferencia entre les diferents k
         while k+1 < max_K:
             dec[k-1] = 100 - (100 * (wcd[k] / wcd[k-1]))
             k = k + 1
+        print()
 
         #mejor K
-        self.K = np.where(max(dec))[0][0] + 3
+        self.K = dec.argmax() + 3
+        print()
 
 
 def distance(X, C):
