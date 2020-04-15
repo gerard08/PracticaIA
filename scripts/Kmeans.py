@@ -1,9 +1,8 @@
-__authors__ = ['XXXXXXXXX','YYYYYYYY']
-__group__ = 'GrupZZ'
+__authors__ = ['1532874', '1531236', '1526000']
+__group__ = 'DL15'
 
 import numpy as np
 import utils
-import math
 import copy
 from scipy.spatial.distance import cdist
 
@@ -288,32 +287,10 @@ def get_colors(centroids):
     Returns:
         lables: list of K labels corresponding to one of the 11 basic colors
     """
-
     #########################################################
     ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
     ##  AND CHANGE FOR YOUR OWN CODE
     #########################################################
+    array_11D = utils.get_color_prob(centroids);
 
-    #Agafem la matriu X (amb els seus valors RGB) i per cada pixel diem quin color representa
-
-
-
-
-    array_11D = utils.get_color_prob(centroids); #això retorna una matriu de (nº centroids) x 11, on 11 son les columnes
-    #i representen la possibilitat de que aquell pixel sigui d'un color en concret
-
-    #Hem de retornar una llista amb les etiquetes de colors que corresponen a cada centroide
-
-    #pista:
-    #colors=np.array(['Red','Orange','Brown','Yellow','Green','Blue','Purple','Pink','Black','Grey','White'])
-
-
-    labels = np.array[0]
-
-
-    for i in centroids:
-        print()
-
-
-    #return list(utils.colors)
-    return labels
+    return utils.colors[np.argmax(array_11D, axis=1)]
