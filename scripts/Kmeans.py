@@ -182,9 +182,7 @@ class KMeans:
         #######################################################
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
-        #######################################################
-
-
+        ######################################################
         # Crec que així ja esta ben fet, caldria revisar
         if np.allclose(self.old_centroids, self.centroids, self.options['tolerance']):
             return True
@@ -232,7 +230,6 @@ class KMeans:
 
         #calcul de la mitjana
         wcd = total / total_dist.shape[0]
-        print()
         return wcd
 
     def find_bestK(self, max_K):
