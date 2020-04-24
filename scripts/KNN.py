@@ -22,11 +22,17 @@ class KNN:
         :param train_data: PxMxNx3 matrix corresponding to P color images
         :return: assigns the train set to the matrix self.train_data shaped as PxD (P points in a D dimensional space)
         """
-        #######################################################
-        ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
-        ##  AND CHANGE FOR YOUR OWN CODE
-        #######################################################
-        self.train_data = np.random.randint(8,size=[10,14400])
+        #mirem si el tipus de dades es float, en cas que no ho sigui ho convertim
+        if train_data.dtype is not float:
+            train_data.astype(float)
+
+        #si la matriu no te dues dimensions la convertim a una de dues dimensions
+        if len(train_data.shape) is not 2:
+            #basicament 0 seria l'altura, 1 la llargada i 2 la profunditat en una matriu de 3d
+            #llavors per passarla a una de 2d, ens quedem amb l'altura original i multipliquem llargada
+            #i profunditat per saber el numero de pixels de la imatge
+            train_data = train_data.reshape(train_data.shape[0], train_data.shape[1]*train_data.shape[2])
+        self.train_data = train_data
 
 
     def get_k_neighbours(self, test_data, k):

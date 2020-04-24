@@ -13,7 +13,7 @@ class TestCases(unittest.TestCase):
 
     def setUp(self):
         np.random.seed(123)
-        with open('./test/test_cases_knn.pkl', 'rb') as f:
+        with open('../test/test_cases_knn.pkl', 'rb') as f:
             self.test_cases = pickle.load(f)
 
     def test_NIU(self):
