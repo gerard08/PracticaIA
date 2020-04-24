@@ -11,6 +11,7 @@ from sklearn.decomposition import PCA
 class KNN:
     def __init__(self, train_data, labels):
 
+        self.neighbors = np.empty([10,3])
         self._init_train(train_data)
         self.labels = np.array(labels)
         #############################################################
@@ -47,16 +48,15 @@ class KNN:
                  the ij-th entry is the j-th nearest train point to the i-th test point
         """
 
+
         if len(test_data.shape) is not 2:
             test_data = test_data.reshape(test_data.shape[0], test_data.shape[1] * test_data.shape[2])
 
         dist = cdist(test_data, self.train_data)
 
-        self.neighbors = self.labels[np.argmin(dist, axis=1)]
-
-
-
-
+        for lola in range(0, (k + 1)):
+            aux = self.labels[np.argmin(dist, axis=1)]
+            np.append(self.neighbors, aux)
         print()
 
 
