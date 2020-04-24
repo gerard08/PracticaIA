@@ -272,8 +272,8 @@ def distance(X, C):
         dist: PxK numpy array position ij is the distance between the
         i-th point of the first set an the j-th point of the second set
     """
-    return cdist(X, C)
-
+    aux = cdist(X, C)
+    return aux
 
 def get_colors(centroids):
     """

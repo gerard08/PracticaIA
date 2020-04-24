@@ -5,6 +5,8 @@ import numpy as np
 import math
 import operator
 from scipy.spatial.distance import cdist
+from sklearn.decomposition import PCA
+
 
 class KNN:
     def __init__(self, train_data, labels):
@@ -32,6 +34,7 @@ class KNN:
             #llavors per passarla a una de 2d, ens quedem amb l'altura original i multipliquem llargada
             #i profunditat per saber el numero de pixels de la imatge
             train_data = train_data.reshape(train_data.shape[0], train_data.shape[1]*train_data.shape[2])
+
         self.train_data = train_data
 
 
@@ -43,11 +46,21 @@ class KNN:
         :return: the matrix self.neighbors is created (NxK)
                  the ij-th entry is the j-th nearest train point to the i-th test point
         """
-        #######################################################
-        ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
-        ##  AND CHANGE FOR YOUR OWN CODE
-        #######################################################
-        self.neighbors = np.random.randint(k, size=[test_data.shape[0],k])
+
+        if len(test_data.shape) is not 2:
+            test_data = test_data.reshape(test_data.shape[0], test_data.shape[1] * test_data.shape[2])
+
+        dist = cdist(test_data, self.train_data)
+
+        self.neighbors = self.labels[np.argmin(dist, axis=1)]
+
+
+
+
+        print()
+
+
+
 
 
     def get_class(self):
@@ -72,6 +85,10 @@ class KNN:
         :param k:         :param k:  the number of neighbors to look at
         :return: the output form get_class (2 Nx1 vector, 1st the classm 2nd the  % of votes it got
         """
+        self.get_k_neighbours(test_data, k)
+        self.get_class()
+        print()
+
 
 
         return np.random.randint(10, size=self.neighbors.size), np.random.random(self.neighbors.size)
