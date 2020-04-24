@@ -4,8 +4,9 @@ __group__ = 'TO_BE_FILLED'
 import numpy as np
 import math
 import operator
+import copy
 from scipy.spatial.distance import cdist
-from sklearn.decomposition import PCA
+
 
 
 class KNN:
@@ -48,19 +49,32 @@ class KNN:
                  the ij-th entry is the j-th nearest train point to the i-th test point
         """
 
-        vaca = []
 
         if len(test_data.shape) is not 2:
             test_data = test_data.reshape(test_data.shape[0], test_data.shape[1] * test_data.shape[2])
 
         dist = cdist(test_data, self.train_data)
 
-        for lola in range(0, k):
-            aux = self.labels[np.argmin(dist, axis=1)].reshape([test_data.shape[0], 1])
-            vaca.append(aux)
+        llista = []
+        llista1 = []
+        num = 857839
+        n = 0
+        for j in dist:
+            while n < k:
+                for i, l in enumerate(j):
+                    if i not in llista and j[i] < num:
+                        num = j[i]
+                        index = i
+                llista.append(index)
+                j[index] = 3874827843
+                num = 857839
+                n += 1
+            laux=copy.deepcopy(llista)
+            llista1.append(laux)
+            n = 0
+            llista.clear()
 
-        self.neighbors = np.asarray(vaca)
-        print()
+        self.neighbors = self.labels[np.asarray(llista1)]
 
 
 

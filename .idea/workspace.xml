@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Practica2IA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Practica2IA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/KNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/KNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,6 +203,7 @@
       <workItem from="1587734294792" duration="12402000" />
       <workItem from="1587751255772" duration="942000" />
       <workItem from="1587752246227" duration="1521000" />
+      <workItem from="1587758146536" duration="6868000" />
     </task>
     <task id="LOCAL-00001" summary="He arreglat uns errors que no permetien passar el testCases">
       <created>1585669307153</created>
@@ -513,66 +515,66 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586378284019" />
-    <state width="500" height="593" key="GridCell.Tab.0.bottom" timestamp="1587753808366">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1237" height="289" key="GridCell.Tab.0.bottom" timestamp="1587768635351">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="368" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
+    <state width="1237" height="289" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587768635351" />
     <state width="539" height="364" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577396" />
     <state width="1323" height="268" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586880299499" />
     <state width="500" height="593" key="GridCell.Tab.0.bottom/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753808366" />
     <state width="1323" height="286" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1587290670793" />
-    <state width="500" height="593" key="GridCell.Tab.0.center" timestamp="1587753808366">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1237" height="289" key="GridCell.Tab.0.center" timestamp="1587768635351">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="368" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
+    <state width="1237" height="289" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587768635351" />
     <state width="539" height="364" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
     <state width="1323" height="268" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586880299499" />
     <state width="500" height="593" key="GridCell.Tab.0.center/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753808366" />
     <state width="1323" height="286" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1587290670789" />
-    <state width="500" height="593" key="GridCell.Tab.0.left" timestamp="1587753808366">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1237" height="289" key="GridCell.Tab.0.left" timestamp="1587768635351">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="368" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
+    <state width="1237" height="289" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587768635351" />
     <state width="539" height="364" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
     <state width="1323" height="268" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586880299499" />
     <state width="500" height="593" key="GridCell.Tab.0.left/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753808366" />
     <state width="1323" height="286" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1587290670789" />
-    <state width="500" height="593" key="GridCell.Tab.0.right" timestamp="1587753808366">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1237" height="289" key="GridCell.Tab.0.right" timestamp="1587768635351">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="368" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
+    <state width="1237" height="289" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587768635351" />
     <state width="539" height="364" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
     <state width="1323" height="268" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586880299499" />
     <state width="500" height="593" key="GridCell.Tab.0.right/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753808366" />
     <state width="1323" height="286" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1587290670789" />
-    <state width="500" height="593" key="GridCell.Tab.1.bottom" timestamp="1587753811162">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="341" height="553" key="GridCell.Tab.1.bottom" timestamp="1587768606039">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="368" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
+    <state width="341" height="553" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587768606039" />
     <state width="539" height="364" key="GridCell.Tab.1.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852579469" />
     <state width="413" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586880033670" />
     <state width="500" height="593" key="GridCell.Tab.1.bottom/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753811162" />
     <state width="413" height="639" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1587150451755" />
-    <state width="500" height="593" key="GridCell.Tab.1.center" timestamp="1587753811162">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="341" height="553" key="GridCell.Tab.1.center" timestamp="1587768606039">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="368" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
+    <state width="341" height="553" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1587768606039" />
     <state width="539" height="364" key="GridCell.Tab.1.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852579469" />
     <state width="413" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586880033670" />
     <state width="500" height="593" key="GridCell.Tab.1.center/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753811162" />
     <state width="413" height="639" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1587150451755" />
-    <state width="500" height="593" key="GridCell.Tab.1.left" timestamp="1587753811162">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="341" height="553" key="GridCell.Tab.1.left" timestamp="1587768606039">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="368" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
+    <state width="341" height="553" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1587768606039" />
     <state width="539" height="364" key="GridCell.Tab.1.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852579469" />
     <state width="413" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586880033670" />
     <state width="500" height="593" key="GridCell.Tab.1.left/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753811162" />
     <state width="413" height="639" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1587150451754" />
-    <state width="500" height="593" key="GridCell.Tab.1.right" timestamp="1587753811162">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="341" height="553" key="GridCell.Tab.1.right" timestamp="1587768606039">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="368" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586795274111" />
+    <state width="341" height="553" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1587768606039" />
     <state width="539" height="364" key="GridCell.Tab.1.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852579469" />
     <state width="413" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586880033670" />
     <state width="500" height="593" key="GridCell.Tab.1.right/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753811162" />
@@ -739,13 +741,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/KNN.py</url>
-          <line>96</line>
+          <line>110</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/TestCases_knn.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/Kmeans.py</url>
@@ -757,41 +754,39 @@
           <line>274</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/KNN.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
         <watch expression="self.test_cases['get_k_neig'][ix]" language="Python" />
+        <watch expression="self.neighbors.array" language="Python" />
+        <watch expression="j[i]" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_find_bestK.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_find_bestK Coverage Results" MODIFIED="1586795259972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_X.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_X Coverage Results" MODIFIED="1586366967900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_find_bestK.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_find_bestK Coverage Results" MODIFIED="1586963924344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases.coverage" NAME="Unittests for TestCases_kmeans.TestCases Coverage Results" MODIFIED="1585667662391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_converges.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_converges Coverage Results" MODIFIED="1586996565726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_get_centroids.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_centroids Coverage Results" MODIFIED="1586775615478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_in_TestCases_kmeans_py.coverage" NAME="Unittests in TestCases_kmeans.py Coverage Results" MODIFIED="1587290314168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_get_class.coverage" NAME="Unittests for TestCases_knn.TestCases.test_get_class Coverage Results" MODIFIED="1587735515218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_get_k_neighbours.coverage" NAME="Unittests for TestCases_knn.TestCases.test_get_k_neighbours Coverage Results" MODIFIED="1587753808211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_get_labels.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_labels Coverage Results" MODIFIED="1586794736153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_centroids.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_centroids Coverage Results" MODIFIED="1586888982583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_color.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_color Coverage Results" MODIFIED="1586963940148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1587737999086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_Kmeans.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_Kmeans Coverage Results" MODIFIED="1586996573415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_in_TestCases_kmeans_py.coverage" NAME="Unittests in TestCases_kmeans.py Coverage Results" MODIFIED="1587290314168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1586776458164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_init_train.coverage" NAME="Unittests for TestCases_knn.TestCases.test_init_train Coverage Results" MODIFIED="1587729365121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_converges.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_converges Coverage Results" MODIFIED="1586724211182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_Kmeans.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_Kmeans Coverage Results" MODIFIED="1586774142184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_fit.coverage" NAME="Unittests for TestCases_knn.TestCases.test_fit Coverage Results" MODIFIED="1587735556375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_NIU.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_NIU Coverage Results" MODIFIED="1586366963456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_centroids.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_centroids Coverage Results" MODIFIED="1586996552885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_knn_TestCases_test_get_k_neighbours.coverage" NAME="Unittests for TestCases_knn.TestCases.test_get_k_neighbours Coverage Results" MODIFIED="1587768628232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_labels.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_labels Coverage Results" MODIFIED="1587141482335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_init_train.coverage" NAME="Unittests for TestCases_knn.TestCases.test_init_train Coverage Results" MODIFIED="1587729365121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_get_k_neighbours.coverage" NAME="Unittests for TestCases_knn.TestCases.test_get_k_neighbours Coverage Results" MODIFIED="1587753808211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_Kmeans.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_Kmeans Coverage Results" MODIFIED="1586774142184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_NIU.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_NIU Coverage Results" MODIFIED="1586366963456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_find_bestK.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_find_bestK Coverage Results" MODIFIED="1586795259972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_fit.coverage" NAME="Unittests for TestCases_knn.TestCases.test_fit Coverage Results" MODIFIED="1587735556375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_get_class.coverage" NAME="Unittests for TestCases_knn.TestCases.test_get_class Coverage Results" MODIFIED="1587735515218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1587737999086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_X.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_X Coverage Results" MODIFIED="1586366967900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_centroids.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_centroids Coverage Results" MODIFIED="1586996552885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_get_labels.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_labels Coverage Results" MODIFIED="1586794736153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_get_color.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_get_color Coverage Results" MODIFIED="1586963940148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_converges.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_converges Coverage Results" MODIFIED="1586724211182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases.coverage" NAME="Unittests for TestCases_kmeans.TestCases Coverage Results" MODIFIED="1585667662391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_init_centroids.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_init_centroids Coverage Results" MODIFIED="1586888982583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
 </project>
