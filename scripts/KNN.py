@@ -57,7 +57,7 @@ class KNN:
 
         llista = []
         llista1 = []
-        num = 857839
+        num = 1000000
         n = 0
         for j in dist:
             while n < k:
@@ -66,8 +66,8 @@ class KNN:
                         num = j[i]
                         index = i
                 llista.append(index)
-                j[index] = 3874827843
-                num = 857839
+                j[index] = max(j)
+                num = max(j)
                 n += 1
             laux = copy.deepcopy(llista)
             llista1.append(laux)

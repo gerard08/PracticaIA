@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Practica2IA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Practica2IA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/KNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/KNN.py" afterDir="false" />
     </list>
@@ -74,7 +72,7 @@
       <recent name="C:\Users\ger-m\PycharmProjects\Practica2IA" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for TestCases_knn.TestCases">
+  <component name="RunManager" selected="Python tests.Unittests for TestCases_knn.TestCases.test_get_k_neighbours">
     <configuration name="Unittests for TestCases_kmeans.TestCases.test_distance" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Practica2IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,10 +150,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for TestCases_knn.TestCases.test_get_k_neighbours" />
         <item itemvalue="Python tests.Unittests for TestCases_knn.TestCases" />
         <item itemvalue="Python tests.Unittests for TestCases_knn.TestCases.test_fit" />
         <item itemvalue="Python tests.Unittests for TestCases_knn.TestCases.test_get_class" />
-        <item itemvalue="Python tests.Unittests for TestCases_knn.TestCases.test_get_k_neighbours" />
         <item itemvalue="Python tests.Unittests for TestCases_kmeans.TestCases.test_distance" />
       </list>
     </recent_temporary>
@@ -207,7 +205,7 @@
       <workItem from="1587758146536" duration="6868000" />
       <workItem from="1587768871428" duration="9259000" />
       <workItem from="1587804540206" duration="675000" />
-      <workItem from="1587805504065" duration="3819000" />
+      <workItem from="1587805504065" duration="4536000" />
     </task>
     <task id="LOCAL-00001" summary="He arreglat uns errors que no permetien passar el testCases">
       <created>1585669307153</created>
@@ -440,7 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587753762239</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="acabada get_class">
+      <created>1587809358712</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1587809358712</updated>
+    </task>
+    <task id="LOCAL-00035" summary="IA acabat!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!">
+      <created>1587809564247</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1587809564247</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +495,9 @@
     <MESSAGE value="funció _init_train" />
     <MESSAGE value="+ o -" />
     <MESSAGE value="Casi acabada funcio esa tocha" />
-    <option name="LAST_COMMIT_MESSAGE" value="Casi acabada funcio esa tocha" />
+    <MESSAGE value="acabada get_class" />
+    <MESSAGE value="IA acabat!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="IA acabat!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585676728071">
@@ -507,10 +521,10 @@
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
     <state x="430" y="231" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587735824173" />
-    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1587809357419">
+    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1587809563162">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587809357419" />
+    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587809563162" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848070270" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586877316058" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753755252" />
@@ -523,34 +537,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586378284019" />
-    <state width="1237" height="352" key="GridCell.Tab.0.bottom" timestamp="1587809528121">
+    <state width="1237" height="361" key="GridCell.Tab.0.bottom" timestamp="1587810039399">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="352" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587809528121" />
+    <state width="1237" height="361" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587810039399" />
     <state width="539" height="364" key="GridCell.Tab.0.bottom/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577396" />
     <state width="1323" height="268" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586880299499" />
     <state width="544" height="516" key="GridCell.Tab.0.bottom/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587779405203" />
     <state width="1323" height="286" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1587290670793" />
-    <state width="1237" height="352" key="GridCell.Tab.0.center" timestamp="1587809528120">
+    <state width="1237" height="361" key="GridCell.Tab.0.center" timestamp="1587810039399">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="352" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587809528120" />
+    <state width="1237" height="361" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587810039399" />
     <state width="539" height="364" key="GridCell.Tab.0.center/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
     <state width="1323" height="268" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586880299499" />
     <state width="544" height="516" key="GridCell.Tab.0.center/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587779405203" />
     <state width="1323" height="286" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1587290670789" />
-    <state width="1237" height="352" key="GridCell.Tab.0.left" timestamp="1587809528120">
+    <state width="1237" height="361" key="GridCell.Tab.0.left" timestamp="1587810039399">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="352" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587809528120" />
+    <state width="1237" height="361" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587810039399" />
     <state width="539" height="364" key="GridCell.Tab.0.left/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
     <state width="1323" height="268" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586880299499" />
     <state width="544" height="516" key="GridCell.Tab.0.left/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587779405203" />
     <state width="1323" height="286" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1587290670789" />
-    <state width="1237" height="352" key="GridCell.Tab.0.right" timestamp="1587809528120">
+    <state width="1237" height="361" key="GridCell.Tab.0.right" timestamp="1587810039399">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="352" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587809528120" />
+    <state width="1237" height="361" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587810039399" />
     <state width="539" height="364" key="GridCell.Tab.0.right/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586852577395" />
     <state width="1323" height="268" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586880299499" />
     <state width="544" height="516" key="GridCell.Tab.0.right/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587779405203" />
@@ -629,10 +643,10 @@
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586826326029" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587768904613" />
-    <state x="258" y="90" key="Vcs.Push.Dialog.v2" timestamp="1587809360746">
+    <state x="258" y="90" key="Vcs.Push.Dialog.v2" timestamp="1587809565743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587809360746" />
+    <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587809565743" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848074671" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586877318741" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753764863" />
@@ -748,16 +762,6 @@
           <line>139</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/KNN.py</url>
-          <line>131</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/TestCases_knn.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -776,7 +780,7 @@
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_Kmeans.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_Kmeans Coverage Results" MODIFIED="1586996573415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_in_TestCases_kmeans_py.coverage" NAME="Unittests in TestCases_kmeans.py Coverage Results" MODIFIED="1587290314168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_distance.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_distance Coverage Results" MODIFIED="1586776458164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_knn_TestCases_test_get_k_neighbours.coverage" NAME="Unittests for TestCases_knn.TestCases.test_get_k_neighbours Coverage Results" MODIFIED="1587768628232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_knn_TestCases_test_get_k_neighbours.coverage" NAME="Unittests for TestCases_knn.TestCases.test_get_k_neighbours Coverage Results" MODIFIED="1587810039387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_knn_TestCases_test_init_train.coverage" NAME="Unittests for TestCases_knn.TestCases.test_init_train Coverage Results" MODIFIED="1587729365121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Practica2IA$Unittests_for_TestCases_kmeans_TestCases_test_NIU.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_NIU Coverage Results" MODIFIED="1586366963456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/PracticaIA$Unittests_for_TestCases_kmeans_TestCases_test_find_bestK.coverage" NAME="Unittests for TestCases_kmeans.TestCases.test_find_bestK Coverage Results" MODIFIED="1586795259972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
