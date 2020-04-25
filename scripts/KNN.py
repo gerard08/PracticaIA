@@ -94,47 +94,24 @@ class KNN:
         #######################################################
 
         dicc = {}
-
-        for l in self.neighbors:
-            if l not in dicc:
-                dicc[l] = 1
-            else:
-                dicc[l] += 1
-
-            print()
-
-
-
-
-
-
-
-
-
-
-
-        '''
         llista = []
 
+        max = 0
         for l in self.neighbors:
-            unique, pos = np.unique(l, return_counts=True)
+            for i,j in enumerate(l):
+                if j not in dicc:
+                    dicc[j] = [i]
+                else:
+                    dicc[j] += [i]
+            for d in dicc.values():
+                if len(d) > max:
+                    max = len(d)
+                    palabra = l[d]
 
-            counts = np.bincount(pos)
-            maxpos = counts.argmax()
-            
-            if np.all(counts == 1):
-                llista.append(l[0])
-            
-            i = 0
-            mcount = max(counts)
-            while mcount != counts[i] and i < len(counts):
-                i += 1
-            llista.append(unique[i])
-        
-            else:
-                llista.append(unique[maxpos])
-            
-            '''
+            llista.append(palabra[0])
+            dicc = {}
+            max = 0
+
 
         return llista
 
