@@ -69,7 +69,7 @@ class KNN:
                 j[index] = 3874827843
                 num = 857839
                 n += 1
-            laux=copy.deepcopy(llista)
+            laux = copy.deepcopy(llista)
             llista1.append(laux)
             n = 0
             llista.clear()
@@ -92,7 +92,51 @@ class KNN:
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
         #######################################################
-        return np.random.randint(10, size=self.neighbors.size), np.random.random(self.neighbors.size)
+
+        dicc = {}
+
+        for l in self.neighbors:
+            if l not in dicc:
+                dicc[l] = 1
+            else:
+                dicc[l] += 1
+
+            print()
+
+
+
+
+
+
+
+
+
+
+
+        '''
+        llista = []
+
+        for l in self.neighbors:
+            unique, pos = np.unique(l, return_counts=True)
+
+            counts = np.bincount(pos)
+            maxpos = counts.argmax()
+            
+            if np.all(counts == 1):
+                llista.append(l[0])
+            
+            i = 0
+            mcount = max(counts)
+            while mcount != counts[i] and i < len(counts):
+                i += 1
+            llista.append(unique[i])
+        
+            else:
+                llista.append(unique[maxpos])
+            
+            '''
+
+        return llista
 
 
     def predict(self, test_data, k):
