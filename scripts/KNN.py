@@ -1,5 +1,5 @@
-__authors__ = 'TO_BE_FILLED'
-__group__ = 'TO_BE_FILLED'
+__authors__ = '1531236, 1532874, 1526000'
+__group__ = 'DL.15'
 
 import numpy as np
 import math
@@ -124,9 +124,4 @@ class KNN:
         :return: the output form get_class (2 Nx1 vector, 1st the classm 2nd the  % of votes it got
         """
         self.get_k_neighbours(test_data, k)
-        self.get_class()
-        print()
-
-
-
-        return np.random.randint(10, size=self.neighbors.size), np.random.random(self.neighbors.size)
+        return self.get_class()
