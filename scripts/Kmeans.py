@@ -4,6 +4,7 @@ __group__ = 'DL15'
 import numpy as np
 import utils
 import copy
+from time import time
 from scipy.spatial.distance import cdist
 
 
@@ -205,13 +206,18 @@ class KMeans:
         difference = False
         iter = 0
 
+        starting_time = time()
         #Comprova si convergeix i si el num d'iteracions es menor al permes
         while difference == False and iter <= self.options['max_iter']:
             self.get_labels()
             self.get_centroids()
             difference = self.converges()
             iter += 1
+        finishing_time = time()
         self.num_iter = iter
+        time_until_converges = finishing_time - starting_time
+
+        return iter, time_until_converges
 
     def whitinClassDistance(self):
         """
@@ -290,6 +296,36 @@ def get_colors(centroids):
     ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
     ##  AND CHANGE FOR YOUR OWN CODE
     #########################################################
-    array_11D = utils.get_color_prob(centroids);
+    array_11D = utils.get_color_prob(centroids)
 
     return utils.colors[np.argmax(array_11D, axis=1)]
+
+def kmean_statistics(class_Kmeans, kmax):
+    # cal mostrar WCD, nombre d'iteracions que ha necessitat per convergir, etc.
+    k=2
+    while(k<=kmax):
+        class_Kmeans.k = k
+        iterations, time_until_converges = class_Kmeans.fit()
+        wcd = class_Kmeans.whitinClassDistance()
+        print("------------ Attempt: k =",k,"----------------")
+        print("Iterations: ",iterations)
+        print("Time until converges (s): ",time_until_converges)
+        print("WCD: ",wcd)
+        k = k + 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0
