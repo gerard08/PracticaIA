@@ -42,7 +42,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1ZrCJC4BJ8s7htuyH9NThvcXwYO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -563,13 +563,13 @@
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
     <state x="430" y="231" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587735824173" />
-    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1589466375334">
+    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1589472275933">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="312" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587809563162" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848070270" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586877316058" />
-    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589466375334" />
+    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589472275933" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1589464939955" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1586880260460">
       <screen x="0" y="0" width="1366" height="728" />
@@ -711,6 +711,10 @@
     </state>
     <state x="950" y="445" width="388" height="545" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1586369966657" />
     <state width="263" height="584" key="GridCell.Tab.3.right/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589469033094" />
+    <state x="395" y="99" key="MultipleFileMergeDialog" timestamp="1589472314304">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="395" y="99" key="MultipleFileMergeDialog/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589472314304" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1589464918205">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -718,13 +722,13 @@
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587768904613" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589464918205" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1589466380120">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1589472280488">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587809565743" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848074671" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586877318741" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589466380120" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589472280488" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1589464942666" />
     <state width="691" height="393" key="XDebugger.FullValuePopup" timestamp="1589470158173">
       <screen x="0" y="0" width="1366" height="768" />
