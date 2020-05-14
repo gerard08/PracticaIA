@@ -300,32 +300,5 @@ def get_colors(centroids):
 
     return utils.colors[np.argmax(array_11D, axis=1)]
 
-def kmean_statistics(class_Kmeans, kmax):
-    # cal mostrar WCD, nombre d'iteracions que ha necessitat per convergir, etc.
-    k=2
-    while(k<=kmax):
-        class_Kmeans.k = k
-        iterations, time_until_converges = class_Kmeans.fit()
-        wcd = class_Kmeans.whitinClassDistance()
-        print("------------ Attempt: k =",k,"----------------")
-        print("Iterations: ",iterations)
-        print("Time until converges (s): ",time_until_converges)
-        print("WCD: ",wcd)
-        k = k + 1
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    return 0
