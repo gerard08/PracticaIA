@@ -23,8 +23,6 @@ def retrievalByColor(imatges, resKmeans, llistaC):
 
 
 
-
-
 if __name__ == '__main__':
 
     #Load all the images and GT
@@ -35,7 +33,7 @@ if __name__ == '__main__':
     classes = list(set(list(train_class_labels) + list(test_class_labels)))
     #Kmeans
     resKmeans = []
-    for el in test_imgs[0:30]:
+    for el in test_imgs[0:20]:
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
         answer.find_bestK(10)
@@ -43,15 +41,31 @@ if __name__ == '__main__':
         resKmeans.append(get_colors(answer.centroids))
 
     #retrieve by color
-    retrievedc = retrievalByColor(test_imgs[0:30], resKmeans, ["Yellow"])
+    retrievedc = retrievalByColor(test_imgs[0:20], resKmeans, ["Blue"])
 
-    for el in retrievedc:
-        im = Image.fromarray(el)
-        im.show()
+    answ = []
+
     if len(retrievedc) == 0:
         print("cap imatge trobada")
 
+    else:
+        for el in retrievedc:
+            answ.append(Image.fromarray(el))
 
+        twidth = 0
+        for el in answ:
+            widths, heights = el.size
+            twidth += widths
+        total_width = twidth
+        max_height = heights
+
+        new_im = Image.new('RGB', (total_width, max_height))
+        x_offset = 0
+        for im in answ:
+            new_im.paste(im, (x_offset, 0))
+            x_offset += im.size[0]
+
+        new_im.show()
 
 ## You can start coding your functions here
 
