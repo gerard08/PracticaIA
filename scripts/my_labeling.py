@@ -33,14 +33,17 @@ if __name__ == '__main__':
 
     #List with all the existant classes
     classes = list(set(list(train_class_labels) + list(test_class_labels)))
+    #Kmeans
     resKmeans = []
-    for el in test_imgs[10:20]:
+    for el in test_imgs[0:30]:
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
         answer.find_bestK(10)
         answer.fit()
         resKmeans.append(get_colors(answer.centroids))
-    retrievedc = retrievalByColor(test_imgs[10:20], resKmeans, ["Green"])
+
+    #retrieve by color
+    retrievedc = retrievalByColor(test_imgs[0:30], resKmeans, ["Yellow"])
 
     for el in retrievedc:
         im = Image.fromarray(el)
