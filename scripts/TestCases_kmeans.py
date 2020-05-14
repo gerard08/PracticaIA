@@ -66,6 +66,7 @@ class TestCases(unittest.TestCase):
             km = KMeans(input, self.test_cases['K'][ix])
             km.fit()
             np.testing.assert_array_equal(km.centroids, self.test_cases['kmeans'][ix])
+            kmean_statistics(km, 5)
 
 
     def test_find_bestK(self):
