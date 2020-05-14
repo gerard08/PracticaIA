@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Practica2IA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Practica2IA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,6 +213,7 @@
       <workItem from="1589300002127" duration="23000" />
       <workItem from="1589301413373" duration="3035000" />
       <workItem from="1589386221784" duration="16000" />
+      <workItem from="1589464411091" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="He arreglat uns errors que no permetien passar el testCases">
       <created>1585669307153</created>
@@ -461,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587809564247</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Nous arxius per fer la part 3 de la pràctica 2 afegits">
+      <created>1589464592983</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1589464592984</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +512,8 @@
     <MESSAGE value="Casi acabada funcio esa tocha" />
     <MESSAGE value="acabada get_class" />
     <MESSAGE value="IA acabat!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="IA acabat!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
+    <MESSAGE value="Nous arxius per fer la part 3 de la pràctica 2 afegits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nous arxius per fer la part 3 de la pràctica 2 afegits" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585676728071">
@@ -531,14 +538,14 @@
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
     <state x="430" y="231" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587735824173" />
-    <state x="312" y="0" key="CommitChangelistDialog2" timestamp="1587809563162">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1589464591947">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="312" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587809563162" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848070270" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586877316058" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753755252" />
-    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1587717442751" />
+    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1589464591947" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1586880260460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -655,21 +662,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="950" y="445" width="388" height="545" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1586369966657" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1589034935382">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1589464918205">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586826326029" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587768904613" />
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589034935382" />
-    <state x="258" y="90" key="Vcs.Push.Dialog.v2" timestamp="1587809565743">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589464918205" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1589464595275">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587809565743" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848074671" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586877318741" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753764863" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1587717445374" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1589464595275" />
     <state width="691" height="393" key="XDebugger.FullValuePopup" timestamp="1587752867022">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
