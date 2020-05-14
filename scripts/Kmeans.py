@@ -109,6 +109,8 @@ class KMeans:
 
         elif self.options['km_init'].lower() == 'random':
 
+            np.random.seed()
+
             while afegits != self.K:
 
                 auxr = np.random.randint(low=0, high=self.X.shape[0], size=(1))[0]
