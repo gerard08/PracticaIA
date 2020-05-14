@@ -21,6 +21,18 @@ def retrievalByColor(imatges, resKmeans, llistaC):
 
     return answ
 
+def kmean_statistics(class_Kmeans, kmax):
+    # cal mostrar WCD, nombre d'iteracions que ha necessitat per convergir, etc.
+    k=2
+    while(k<=kmax):
+        class_Kmeans.k = k
+        iterations, time_until_converges = class_Kmeans.fit()
+        wcd = class_Kmeans.whitinClassDistance()
+        print("------------ Attempt: k =",k,"----------------")
+        print("Iterations: ",iterations)
+        print("Time until converges (s): ",time_until_converges)
+        print("WCD: ",wcd)
+        k = k + 1
 
 
 if __name__ == '__main__':
@@ -41,11 +53,9 @@ if __name__ == '__main__':
         resKmeans.append(get_colors(answer.centroids))
 
     #retrieve by color
+    ''''
     retrievedc = retrievalByColor(test_imgs[0:20], resKmeans, ["Blue"])
-
     answ = []
-
-
 
     if len(retrievedc) == 0:
         print("cap imatge trobada")
@@ -68,6 +78,9 @@ if __name__ == '__main__':
             x_offset += im.size[0]
 
         new_im.show()
+    '''
+
+
 
 ## You can start coding your functions here
 
@@ -75,19 +88,6 @@ if __name__ == '__main__':
 #retrieval by color
 
 #kmeans_statistics
-def kmean_statistics(class_Kmeans, kmax):
-    # cal mostrar WCD, nombre d'iteracions que ha necessitat per convergir, etc.
-    k=2
-    while(k<=kmax):
-        class_Kmeans.k = k
-        iterations, time_until_converges = class_Kmeans.fit()
-        wcd = class_Kmeans.whitinClassDistance()
-        print("------------ Attempt: k =",k,"----------------")
-        print("Iterations: ",iterations)
-        print("Time until converges (s): ",time_until_converges)
-        print("WCD: ",wcd)
-        k = k + 1
-#test
 kmean_statistics(answer, 5)
 
 
