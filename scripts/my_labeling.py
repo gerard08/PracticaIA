@@ -21,9 +21,39 @@ if __name__ == '__main__':
 
 ## You can start coding your functions here
 
+#       RESUM DEL VIDEO
 
+#visualize_Kmeans(Kmeans, [80,60,3](tamany imatge))
 
+#visualize_retrieval(Imatges_ordenades, info(info que volguem mostrar), ok(array amb true i false), title='Query: Socks')
 
+#Retrieval_by_color(Imatges, Resultat_Kmeans, "pink")-->Retorna imatges del color que li demanem
 
+#Get_color_accuracy(Resultat Kmeans, Ground_Truth) --> Ens dona un resultat expressat amb un numero
+#ell fa exemple amb la K per exemple
+#les imatges tenen diferents colors, aixi que hem de "jugar" amb l'acuracy per trobar la ideal
 
+#Get_shape_accuracy(suposo que es el mateix que el color acuracy)
+
+#Kmeans_statistics:
+#nº iteracions per convergir (+ eficients = - iteracions) o tambe podriem posar el temps
+#WithinClassDistance de cada K(compararles)
+
+#millores
+
+    #KNN
+#Cambiar tamany del Train set
+#canviar l'espai de característiques
+    #Posar les imatges a color (ara mateix estan en B/N)
+    #Diferents resolucions d'imatge
+    #Altres característiques
+        #Caracteristica 1: total de pixels blanc
+        #2: dif entre pixels imatge sup i imatge inf (p. ex pantalons son rectes pero un bolso no)
+        #3: variança valors dels pixels
+
+    #Kmeans
+#inicialitzar centroides d'una altra manera
+#treballar amb diferents espais de color (Lab, Hsv, Colornaming,...)
+#Utilitzar altres heurístiques per trobar la bestK(InterClassDistance, Fisher...)
+#Podriem jugar amb el llindar de colors, nosaltres ara fem servir un 20%, pero el podriem canviar
 

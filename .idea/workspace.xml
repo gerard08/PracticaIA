@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/my_labeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/my_labeling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +214,7 @@
       <workItem from="1589300002127" duration="23000" />
       <workItem from="1589301413373" duration="3035000" />
       <workItem from="1589386221784" duration="16000" />
-      <workItem from="1589464411091" duration="315000" />
+      <workItem from="1589464411091" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="He arreglat uns errors que no permetien passar el testCases">
       <created>1585669307153</created>
@@ -467,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589464592984</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Nous arxius per fer la part 3 de la pràctica 2 afegits">
+      <created>1589464940903</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1589464940903</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,14 +546,14 @@
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
     <state x="430" y="231" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587735824173" />
-    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1589464591947">
+    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1589464939955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="312" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587809563162" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848070270" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586877316058" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753755252" />
-    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1589464591947" />
+    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1589464939955" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1586880260460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -669,14 +677,14 @@
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587768904613" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589464918205" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1589464595275">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1589464942666">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587809565743" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848074671" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586877318741" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587753764863" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1589464595275" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1589464942666" />
     <state width="691" height="393" key="XDebugger.FullValuePopup" timestamp="1587752867022">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -779,6 +787,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1585851392332" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1589465573845">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589465573845" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
