@@ -58,7 +58,7 @@ if __name__ == '__main__':
     for el in test_imgs[0:10]:
         answer = KMeans(el)
         answer.options['km_init'] = 'first'
-        answer.find_bestK(10)
+        answer.find_bestK(5)
         answer.fit()
         Plot3DCloud(answer)
         visualize_k_means(answer, [80, 60, 3])
