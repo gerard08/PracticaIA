@@ -4,7 +4,7 @@ __group__ = 'TO_BE_FILLED'
 import numpy as np
 from Kmeans import *
 import KNN
-from utils_data import read_dataset, visualize_k_means, visualize_retrieval
+from utils_data import read_dataset, visualize_k_means, visualize_retrieval, Plot3DCloud
 import matplotlib.pyplot as plt
 import cv2
 from PIL import Image
@@ -57,10 +57,16 @@ if __name__ == '__main__':
     resKmeans = []
     for el in test_imgs[0:10]:
         answer = KMeans(el)
-        answer.options['km_init'] = 'random'
-        answer.find_bestK(20)
+        answer.options['km_init'] = 'first'
+        answer.find_bestK(10)
         answer.fit()
+        Plot3DCloud(answer)
+        visualize_k_means(answer, [80, 60, 3])
+        print('Aqui estamos')
         resKmeans.append(get_colors(answer.centroids))
+        print(answer.centroids)
+        print(get_colors(answer.centroids))
+
 
     #retrieve by color
     isok = []
@@ -85,7 +91,7 @@ if __name__ == '__main__':
 ## You can start coding your functions here
 
 #kmeans_statistics
-kmean_statistics(answer, 5)
+kmean_statistics(answer, 10)
 
 
 
