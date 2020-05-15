@@ -86,7 +86,11 @@ def visualize_retrieval(imgs, topN, info=None, ok=None, title='', query=None):
             sp = (sp - 1) // (columns-1) + 1 + sp
         fig.add_subplot(rows, columns, sp)
         if ok is not None:
+            print(ok[i])
+            print(topN)
+            print(len(imgs))
             im = add_border([0, 255, 0] if ok[i] else [255, 0, 0])
+            print('lol')
         else:
             im = imgs[i]
         plt.imshow(im)

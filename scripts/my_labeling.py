@@ -8,8 +8,9 @@ from utils_data import read_dataset, visualize_k_means, visualize_retrieval
 import matplotlib.pyplot as plt
 import cv2
 from PIL import Image
+from PIL import ImageOps
 
-def retrievalByColor(imatges, resKmeans, llistaC):
+def retrievalByColor(imatges, resKmeans, llistaC, isok = None):
     answ = []
     for i,el in enumerate(resKmeans):
         count = 0
@@ -18,6 +19,15 @@ def retrievalByColor(imatges, resKmeans, llistaC):
                 count += 1
         if count == len(llistaC):
             answ.append(imatges[i])
+            if isok is not None:
+                sum = 0
+                for revisa in llistaC:
+                    if revisa in test_color_labels[i]:
+                        sum += 1
+                if sum == len(llistaC):
+                    isok.append(True)
+                else:
+                    isok.append(False)
 
     return answ
 
@@ -45,47 +55,34 @@ if __name__ == '__main__':
     classes = list(set(list(train_class_labels) + list(test_class_labels)))
     #Kmeans
     resKmeans = []
-    for el in test_imgs[0:20]:
+    for el in test_imgs[0:10]:
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
-        answer.find_bestK(10)
+        answer.find_bestK(20)
         answer.fit()
         resKmeans.append(get_colors(answer.centroids))
 
     #retrieve by color
-    ''''
-    retrievedc = retrievalByColor(test_imgs[0:20], resKmeans, ["Blue"])
+    isok = []
+    retrievedc = retrievalByColor(test_imgs[0:10], resKmeans, ["Black"], isok)
     answ = []
 
     if len(retrievedc) == 0:
         print("cap imatge trobada")
 
     else:
-        for el in retrievedc:
-            answ.append(Image.fromarray(el))
+        for i,el in enumerate(retrievedc):
+            im = Image.fromarray(el)
+            if isok[i]:
+                imagenconborde = ImageOps.expand(im, border=5, fill="green")
+            else:
+                imagenconborde = ImageOps.expand(im, border=5, fill="red")
+            answ.append(imagenconborde)
 
-        twidth = 0
-        for el in answ:
-            widths, heights = el.size
-            twidth += widths
-        total_width = twidth
-        max_height = heights
-
-        new_im = Image.new('RGB', (total_width, max_height))
-        x_offset = 0
-        for im in answ:
-            new_im.paste(im, (x_offset, 0))
-            x_offset += im.size[0]
-
-        new_im.show()
-    '''
-
+        visualize_retrieval(answ, len(answ))
 
 
 ## You can start coding your functions here
-
-#bestk
-#retrieval by color
 
 #kmeans_statistics
 kmean_statistics(answer, 5)
