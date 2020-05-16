@@ -3,7 +3,7 @@ __group__ = 'TO_BE_FILLED'
 
 import numpy as np
 from Kmeans import *
-import KNN
+from KNN import *
 from utils_data import read_dataset, visualize_k_means, visualize_retrieval, Plot3DCloud
 import matplotlib.pyplot as plt
 import cv2
@@ -44,6 +44,15 @@ def kmean_statistics(class_Kmeans, kmax):
         print("WCD: ",wcd)
         k = k + 1
 
+def Retrival_by_shape(llimatges, etiquetes, cerca):
+    llista = []
+    for i,x in enumerate(etiquetes):
+        if x == cerca:
+            llista.append(llimatges[i])
+
+    return llista
+
+
 
 if __name__ == '__main__':
 
@@ -53,6 +62,7 @@ if __name__ == '__main__':
 
     #List with all the existant classes
     classes = list(set(list(train_class_labels) + list(test_class_labels)))
+
     #Kmeans
     resKmeans = []
     for el in test_imgs[0:10]:
@@ -60,8 +70,8 @@ if __name__ == '__main__':
         answer.options['km_init'] = 'first'
         answer.find_bestK(5)
         answer.fit()
-        Plot3DCloud(answer)
-        visualize_k_means(answer, [80, 60, 3])
+        #Plot3DCloud(answer)
+        #visualize_k_means(answer, [80, 60, 3])
         print('Aqui estamos')
         resKmeans.append(get_colors(answer.centroids))
         print(answer.centroids)
@@ -91,9 +101,28 @@ if __name__ == '__main__':
 ## You can start coding your functions here
 
 #kmeans_statistics
-kmean_statistics(answer, 10)
+#kmean_statistics(answer, 10)
 
+answ = []
+for el in train_imgs:
+    answ.append(cv2.cvtColor(el, cv2.COLOR_BGR2GRAY))
+a = np.array(answ)
 
+answtest = []
+for el in test_imgs:
+    answtest.append(cv2.cvtColor(el, cv2.COLOR_BGR2GRAY))
+b = np.array(answtest)
+
+resultatKNN = []
+#for el in train_imgs:
+knntest = KNN(a, train_class_labels)
+#for i in test_imgs:
+hola = knntest.predict(b[0:50], 8)
+    #resultatKNN.append(knntest.getlabelsLola())
+retrievalbyshape = Retrival_by_shape(test_imgs[0:50], hola, "Shorts")
+if len(retrievalbyshape) == 0:
+    print("no he trobat res lala :(, et puc buscar", classes)
+visualize_retrieval(retrievalbyshape, len(retrievalbyshape))
 
 
 

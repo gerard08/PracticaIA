@@ -125,3 +125,7 @@ class KNN:
         """
         self.get_k_neighbours(test_data, k)
         return self.get_class()
+
+
+    def getlabelsLola(self):
+        return self.labels
