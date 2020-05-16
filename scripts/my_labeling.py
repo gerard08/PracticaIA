@@ -52,6 +52,13 @@ def Retrival_by_shape(llimatges, etiquetes, cerca):
 
     return llista
 
+def retrieval_combined(imatges, formes, colors, forma, color):
+    answ = []
+    for i, el in enumerate(imatges):
+        if forma == formes[i] and color in colors[i]:
+            answ.append(el)
+    return answ
+
 
 
 if __name__ == '__main__':
@@ -65,22 +72,21 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
-    for el in test_imgs[0:10]:
+    for el in test_imgs[0:50]:
         answer = KMeans(el)
         answer.options['km_init'] = 'first'
         answer.find_bestK(5)
         answer.fit()
         #Plot3DCloud(answer)
         #visualize_k_means(answer, [80, 60, 3])
-        print('Aqui estamos')
         resKmeans.append(get_colors(answer.centroids))
-        print(answer.centroids)
-        print(get_colors(answer.centroids))
+        #print(answer.centroids)
+        #print(get_colors(answer.centroids))
 
 
     #retrieve by color
     isok = []
-    retrievedc = retrievalByColor(test_imgs[0:10], resKmeans, ["Black"], isok)
+    retrievedc = retrievalByColor(test_imgs[0:50], resKmeans, ["Blue"], isok)
     answ = []
 
     if len(retrievedc) == 0:
@@ -103,6 +109,7 @@ if __name__ == '__main__':
 #kmeans_statistics
 #kmean_statistics(answer, 10)
 
+#passem les imatges en b/n
 answ = []
 for el in train_imgs:
     answ.append(cv2.cvtColor(el, cv2.COLOR_BGR2GRAY))
@@ -113,20 +120,26 @@ for el in test_imgs:
     answtest.append(cv2.cvtColor(el, cv2.COLOR_BGR2GRAY))
 b = np.array(answtest)
 
+#Entrenem l'algorisme
 resultatKNN = []
-#for el in train_imgs:
 knntest = KNN(a, train_class_labels)
-#for i in test_imgs:
+
+#afegim les imatges sobre les que volem buscar
 hola = knntest.predict(b[0:50], 8)
-    #resultatKNN.append(knntest.getlabelsLola())
-retrievalbyshape = Retrival_by_shape(test_imgs[0:50], hola, "Shorts")
+#realitzem la busqueda sobre les etiquetes obtingudes
+retrievalbyshape = Retrival_by_shape(test_imgs[0:50], hola, "Flip Flops")
 if len(retrievalbyshape) == 0:
     print("no he trobat res lala :(, et puc buscar", classes)
-visualize_retrieval(retrievalbyshape, len(retrievalbyshape))
+else:
+    visualize_retrieval(retrievalbyshape, len(retrievalbyshape))
 
+#busqueda conjunta
 
-
-
+si = retrieval_combined(test_imgs[0:50], hola, resKmeans, "Flip Flops", "Blue")
+if len(si) != 0:
+    visualize_retrieval(si, len(si))
+else:
+    print("no he trobat res")
 #       RESUM DEL VIDEO
 
 #visualize_Kmeans(Kmeans, [80,60,3](tamany imatge))
