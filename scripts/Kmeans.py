@@ -219,28 +219,52 @@ class KMeans:
 
         return iter, time_until_converges
 
-    def whitinClassDistance(self):
+    def whitinClassDistance(self, type):
         """
          returns the whithin class distance of the current clustering
         """
         #######################################################
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
+        ##SUMA DE LES MITJANES DE LES DISTÀNCIES ENTRE TOTS ELS PARELLS DE CLASSSES
         #######################################################
+        if type == 'interclass':
 
-        dist = distance(self.X, self.centroids)
+            answ = []
+            wcd = 0
+            for el in self.centroids[0]:
+                for i in range(0,len(self.centroids[0])):
+                    wcd += np.absolute(el - self.centroids[0][i])
+                answ.append(wcd/(len(self.centroids[0]) - 1))
+                wcd = 0
 
-        #trec la distancia de cada pixel amb el centroide mes proper
-        total_dist = np.amin(dist, axis=1)
 
-        #faig el calcul de intra-class per cada x i faig el total
-        total = np.sum(np.power(total_dist, 2))
+            for el in answ:
+                wcd += el
 
-        #calcul de la mitjana
-        wcd = total / total_dist.shape[0]
+        elif type == 'intraclass':
+
+            dist = distance(self.X, self.centroids)
+
+            #trec la distancia de cada pixel amb el centroide mes proper
+            total_dist = np.amin(dist, axis=1)
+
+            #faig el calcul de intra-class per cada x i faig el total
+            total = np.sum(np.power(total_dist, 2))
+
+            #calcul de la mitjana
+            wcd = total / total_dist.shape[0]
+
+
+        elif type == 'fisher':
+            wcdinter = self.whitinClassDistance('interclass')
+            wcdintra = self.whitinClassDistance('intraclass')
+
+            wcd = wcdintra/wcdinter
+
         return wcd
 
-    def find_bestK(self, max_K):
+    def find_bestK(self, max_K, method):
         """
          sets the best k anlysing the results up to 'max_K' clusters
         """
@@ -252,13 +276,13 @@ class KMeans:
 
         self.K = cadak
         self.fit()
-        wcd0 = self.whitinClassDistance()
+        wcd0 = self.whitinClassDistance(method)
         cadak += 1
         
         while cadak < max_K:
             self.K = cadak
             self.fit()
-            wcd = self.whitinClassDistance()
+            wcd = self.whitinClassDistance(method)
             aux = 100 - (100 * (wcd / wcd0))
             if aux < 20:
                 self.K = cadak - 1

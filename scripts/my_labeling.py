@@ -89,10 +89,10 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
-    for el in test_imgs[0:50]:
+    for el in test_imgs[0:10]:
         answer = KMeans(el)
-        answer.options['km_init'] = 'first'
-        answer.find_bestK(5)
+        answer.options['km_init'] = 'random'
+        answer.find_bestK(8,'fisher')
         answer.fit()
         #Plot3DCloud(answer)
         #visualize_k_means(answer, [80, 60, 3])
@@ -103,9 +103,9 @@ if __name__ == '__main__':
 
     #retrieve by color
     isok = []
-    retrievedc = retrievalByColor(test_imgs[0:50], resKmeans, ["Blue"], isok)
+    retrievedc = retrievalByColor(test_imgs[0:10], resKmeans, ["Blue"], isok)
     if len(isok) != 0:
-        percent = get_color_accuracy(resKmeans, test_color_labels[0:50])
+        percent = get_color_accuracy(resKmeans, test_color_labels[0:10])
         print("hem encertat un ", percent, "% en l'etiquetatge de color")
     answ = []
 
@@ -128,7 +128,7 @@ if __name__ == '__main__':
 
 #kmeans_statistics
 #kmean_statistics(answer, 10)
-
+''''
 #passem les imatges en b/n
 answ = []
 for el in train_imgs:
@@ -147,15 +147,15 @@ knntest = KNN(a, train_class_labels)
 #afegim les imatges sobre les que volem buscar
 hola = knntest.predict(b[0:50], 8)
 #realitzem la busqueda sobre les etiquetes obtingudes
-retrievalbyshape = Retrival_by_shape(test_imgs[0:50], hola, "Flip Flops")
+retrievalbyshape = Retrival_by_shape(test_imgs[0:50], hola, "Shorts")
 if len(retrievalbyshape) == 0:
-    print("no he trobat res lala :(, et puc buscar", classes)
+    print("no he trobat res :(, et puc buscar", classes)
 else:
     visualize_retrieval(retrievalbyshape, len(retrievalbyshape))
 
 #busqueda conjunta
 
-si = retrieval_combined(test_imgs[0:50], hola, resKmeans, "Flip Flops", "Blue")
+si = retrieval_combined(test_imgs[0:50], hola, resKmeans, "Shorts", "Brown")
 if len(si) != 0:
     visualize_retrieval(si, len(si))
 else:
@@ -199,6 +199,6 @@ print(perc, "percent d'accuracy en la detecció de forma")
 #Utilitzar altres heurístiques per trobar la bestK(InterClassDistance, Fisher...)
 #Podriem jugar amb el llindar de colors, nosaltres ara fem servir un 20%, pero el podriem canviar
 
-
+'''
 
 
