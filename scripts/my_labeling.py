@@ -31,6 +31,13 @@ def retrievalByColor(imatges, resKmeans, llistaC, isok = None):
 
     return answ
 
+def get_color_acuracy(isok):
+    true = 0
+    for el in isok:
+        if el is True:
+            true += 1
+    return (true/len(isok))*100
+
 def kmean_statistics(class_Kmeans, kmax):
     # cal mostrar WCD, nombre d'iteracions que ha necessitat per convergir, etc.
     k=2
@@ -87,6 +94,9 @@ if __name__ == '__main__':
     #retrieve by color
     isok = []
     retrievedc = retrievalByColor(test_imgs[0:50], resKmeans, ["Blue"], isok)
+    if len(isok) is not 0:
+        percent = get_color_acuracy(isok)
+        print("hem encertat un ", percent, "%")
     answ = []
 
     if len(retrievedc) == 0:

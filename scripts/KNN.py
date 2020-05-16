@@ -127,5 +127,3 @@ class KNN:
         return self.get_class()
 
 
-    def getlabelsLola(self):
-        return self.labels
