@@ -89,7 +89,7 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
-    for el in test_imgs[0:10]:
+    for el in test_imgs[0:50]:
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
         answer.find_bestK(8,'fisher')
@@ -103,9 +103,9 @@ if __name__ == '__main__':
 
     #retrieve by color
     isok = []
-    retrievedc = retrievalByColor(test_imgs[0:10], resKmeans, ["Blue"], isok)
+    retrievedc = retrievalByColor(test_imgs[0:50], resKmeans, ["Blue"], isok)
     if len(isok) != 0:
-        percent = get_color_accuracy(resKmeans, test_color_labels[0:10])
+        percent = get_color_accuracy(resKmeans, test_color_labels[0:50])
         print("hem encertat un ", percent, "% en l'etiquetatge de color")
     answ = []
 
@@ -122,6 +122,8 @@ if __name__ == '__main__':
             answ.append(imagenconborde)
 
         visualize_retrieval(answ, len(answ))
+
+    #stadistics
 
 
 ## You can start coding your functions here

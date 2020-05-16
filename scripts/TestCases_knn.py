@@ -1,8 +1,6 @@
-import unittest
 import pickle
-import json
-import os
-import numpy as np
+import unittest
+
 import KNN as k
 from KNN import *
 from utils import *

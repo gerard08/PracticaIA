@@ -232,15 +232,24 @@ class KMeans:
 
             answ = []
             wcd = 0
-            for el in self.centroids[0]:
-                for i in range(0,len(self.centroids[0])):
-                    wcd += np.absolute(el - self.centroids[0][i])
-                answ.append(wcd/(len(self.centroids[0]) - 1))
-                wcd = 0
+
+
+            dista = distance(self.centroids, self.centroids)
+            wcd = np.sum(np.median(dista, axis=1))
+
+
+
+
+            '''for el in self.centroids[0].shape[0]:
+                for ol in enumerate(el):
+                    for i in range(0,len(self.centroids[0].shape[1])):
+                        wcd += np.absolute(el - self.centroids[0][i])
+                    answ.append(wcd/(len(self.centroids[0]) - 1))
+                    wcd = 0
 
 
             for el in answ:
-                wcd += el
+                wcd += el'''
 
         elif type == 'intraclass':
 
@@ -260,7 +269,11 @@ class KMeans:
             wcdinter = self.whitinClassDistance('interclass')
             wcdintra = self.whitinClassDistance('intraclass')
 
-            wcd = wcdintra/wcdinter
+            if wcdinter == 0:
+                wcd = 76767878
+            else:
+                wcd = wcdintra/wcdinter
+
 
         return wcd
 
