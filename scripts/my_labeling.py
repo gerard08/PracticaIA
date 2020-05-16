@@ -59,9 +59,9 @@ def retrieval_combined(imatges, formes, colors, forma, color):
             answ.append(el)
     return answ
 
-def get_color_accuracy(resKmeans, test_color_labels):
+def get_color_accuracy(resKmeans, labels):
     encert = 0
-    for i, el in enumerate(test_color_labels):
+    for i, el in enumerate(labels):
         it = 0
         for color in el:
             if color in resKmeans[i]:
@@ -69,6 +69,13 @@ def get_color_accuracy(resKmeans, test_color_labels):
         if it == len(el):
             encert += 1
     return (encert/len(resKmeans))*100
+
+def get_shape_accuracy(resKNN, labels):
+    si = 0
+    for i, el in enumerate(labels):
+        if el == labels[i]:
+            si += 1
+    return (si/len(resKNN))*100
 
 
 if __name__ == '__main__':
@@ -99,7 +106,7 @@ if __name__ == '__main__':
     retrievedc = retrievalByColor(test_imgs[0:50], resKmeans, ["Blue"], isok)
     if len(isok) != 0:
         percent = get_color_accuracy(resKmeans, test_color_labels[0:50])
-        print("hem encertat un ", percent, "%")
+        print("hem encertat un ", percent, "% en l'etiquetatge de color")
     answ = []
 
     if len(retrievedc) == 0:
@@ -153,6 +160,9 @@ if len(si) != 0:
     visualize_retrieval(si, len(si))
 else:
     print("no he trobat res")
+
+perc = get_shape_accuracy(hola, test_class_labels[0:50])
+print(perc, "percent d'accuracy en la detecció de forma")
 #       RESUM DEL VIDEO
 
 #visualize_Kmeans(Kmeans, [80,60,3](tamany imatge))
