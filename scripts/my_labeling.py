@@ -72,6 +72,14 @@ def kmean_statistics(class_Kmeans, kmax):
         k += 1
 
 
+def get_shape_accuracy(resKNN, labels):
+    si = 0
+    for i, el in enumerate(labels):
+        if el == labels[i]:
+            si += 1
+    return (si/len(resKNN))*100
+
+
 def get_color_accuracy(resKmeans, labels):
     encert = 0
     for i, el in enumerate(labels):
@@ -83,13 +91,6 @@ def get_color_accuracy(resKmeans, labels):
             encert += 1
     return (encert/len(resKmeans))*100
 
-
-def get_shape_accuracy(resKNN, labels):
-    si = 0
-    for i, el in enumerate(labels):
-        if el == labels[i]:
-            si += 1
-    return (si/len(resKNN))*100
 
 
 
@@ -105,7 +106,7 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
-    for el in test_imgs[4:5]:
+    for el in test_imgs[0:1]:
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
         answer.find_bestK(8,'fisher')
@@ -119,7 +120,7 @@ if __name__ == '__main__':
 
     #RETRIEVAL_BY_COLOR
     isok = []
-    retrievedc = retrievalByColor(test_imgs[4:5], resKmeans, ["Black"], isok)
+    retrievedc = retrievalByColor(test_imgs[0:1], resKmeans, ["Black"], isok)
     if len(isok) != 0:
         #GET_COLOR_ACCURACY
         percent = get_color_accuracy(resKmeans, test_color_labels[4:5])
@@ -158,30 +159,34 @@ if __name__ == '__main__':
     knntest = KNN(a, train_class_labels)
 
     #afegim les imatges sobre les que volem buscar
-    hola = knntest.predict(b[0:50], 8)
+    hola = knntest.predict(b[0:1], 8)
     #realitzem la busqueda sobre les etiquetes obtingudes
-    retrievalbyshape = Retrival_by_shape(test_imgs[0:50], hola, "Shorts")
+    retrievalbyshape = Retrival_by_shape(test_imgs[0:1], hola, "Shorts")
     if len(retrievalbyshape) == 0:
         print("No he trobat res, et puc buscar", classes)
     else:
         visualize_retrieval(retrievalbyshape, len(retrievalbyshape))
 
 
-    #GET_SHAPE_ACCURACY
-    perc = get_shape_accuracy(hola, test_class_labels[0:50])
-
-    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
-
-
     #RETRIEVAL COMBINED
-    si = retrieval_combined(test_imgs[0:50], hola, resKmeans, "Shorts", "Brown")
+    si = retrieval_combined(test_imgs[0:1], hola, resKmeans, "Shorts", "Brown")
     if len(si) != 0:
         visualize_retrieval(si, len(si))
     else:
         print("No he trobat res")
 
 
+
     #KMEAN_STATISTICS
     kmean_statistics(answer, 10)
+
+
+    #GET_SHAPE_ACCURACY
+    perc = get_shape_accuracy(hola, test_class_labels[0:1])
+
+    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
+
+
+
 
 
