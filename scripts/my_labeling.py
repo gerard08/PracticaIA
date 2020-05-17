@@ -42,6 +42,7 @@ def Retrival_by_shape(llimatges, etiquetes, cerca):
 
     return llista
 
+
 def retrieval_combined(imatges, formes, colors, forma, color):
     answ = []
     for i, el in enumerate(imatges):
