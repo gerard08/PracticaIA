@@ -194,7 +194,7 @@ class KMeans:
             return False
 
 
-    def fit(self, pr=False):
+    def fit(self):
         """
         Runs K-Means algorithm until it converges or until the number
         of iterations is smaller than the maximum number of iterations.
@@ -214,11 +214,11 @@ class KMeans:
             self.get_labels()
             self.get_centroids()
             difference = self.converges()
-            ar.append(Plot3DCloud(self))
+            #ar.append(Plot3DCloud(self))
 
             iter += 1
         self.num_iter = iter
-        plt.show()
+        #plt.show()
 
     def whitinClassDistance(self, type):
         """

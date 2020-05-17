@@ -34,11 +34,16 @@ def retrievalByColor(imatges, resKmeans, llistaC, isok = None):
     return answ
 
 
-def Retrival_by_shape(llimatges, etiquetes, cerca):
+def Retrival_by_shape(llimatges, etiquetes, cerca, isok=None):
     llista = []
     for i,x in enumerate(etiquetes):
         if x == cerca:
             llista.append(llimatges[i])
+            if isok is not None:
+                if x == test_class_labels[i]:
+                    isok.append(True)
+                else:
+                    isok.append(False)
 
     return llista
 
@@ -92,6 +97,13 @@ def get_color_accuracy(resKmeans, labels):
     return (encert/len(resKmeans))*100
 
 
+def get_shape_accuracy(resKNN, labels):
+    si = 0
+    for i, el in enumerate(labels):
+        if el == labels[i]:
+            si += 1
+    return (si/len(resKNN))*100
+
 
 
 
@@ -106,11 +118,11 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
-    for el in test_imgs[0:1]:
+    for el in test_imgs[0:10]:
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
         answer.find_bestK(8,'fisher')
-        answer.fit(True)
+        answer.fit()
         #Plot3DCloud(answer)
         #visualize_k_means(answer, [80, 60, 3])
         resKmeans.append(get_colors(answer.centroids))
@@ -120,11 +132,11 @@ if __name__ == '__main__':
 
     #RETRIEVAL_BY_COLOR
     isok = []
-    retrievedc = retrievalByColor(test_imgs[0:1], resKmeans, ["Black"], isok)
+    retrievedc = retrievalByColor(test_imgs[0:10], resKmeans, ["Black"], isok)
     if len(isok) != 0:
         #GET_COLOR_ACCURACY
-        percent = get_color_accuracy(resKmeans, test_color_labels[4:5])
-        print("Hem encertat un ", percent, "% en l'etiquetatge de color")
+        percent = get_color_accuracy(resKmeans, test_color_labels[0:10])
+        print("We color labbeled a", percent, "% of the images")
     answ = []
 
     if len(retrievedc) == 0:
@@ -159,22 +171,37 @@ if __name__ == '__main__':
     knntest = KNN(a, train_class_labels)
 
     #afegim les imatges sobre les que volem buscar
-    hola = knntest.predict(b[0:1], 8)
+    hola = knntest.predict(b[0:10], 8)
     #realitzem la busqueda sobre les etiquetes obtingudes
-    retrievalbyshape = Retrival_by_shape(test_imgs[0:1], hola, "Shorts")
+    isok = []
+    retrievalbyshape = Retrival_by_shape(test_imgs[0:10], hola, "Shorts", isok)
     if len(retrievalbyshape) == 0:
         print("No he trobat res, et puc buscar", classes)
     else:
-        visualize_retrieval(retrievalbyshape, len(retrievalbyshape))
+        answ = []
+        for i, el in enumerate(retrievalbyshape):
+            im = Image.fromarray(el)
+            if isok[i]:
+                imagenconborde = ImageOps.expand(im, border=5, fill="green")
+            else:
+                imagenconborde = ImageOps.expand(im, border=5, fill="red")
+            answ.append(imagenconborde)
+
+        visualize_retrieval(answ, len(answ))
+
+
+    #GET_SHAPE_ACCURACY
+    perc = get_shape_accuracy(hola, test_class_labels[0:10])
+
+    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
 
     #RETRIEVAL COMBINED
-    si = retrieval_combined(test_imgs[0:1], hola, resKmeans, "Shorts", "Brown")
+    si = retrieval_combined(test_imgs[0:10], hola, resKmeans, "Shorts", "Brown")
     if len(si) != 0:
         visualize_retrieval(si, len(si))
     else:
         print("No he trobat res")
-
 
 
     #KMEAN_STATISTICS
@@ -182,7 +209,7 @@ if __name__ == '__main__':
 
 
     #GET_SHAPE_ACCURACY
-    perc = get_shape_accuracy(hola, test_class_labels[0:1])
+    perc = get_shape_accuracy(hola, test_class_labels[0:10])
 
     print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
