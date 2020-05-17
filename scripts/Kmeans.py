@@ -124,10 +124,23 @@ class KMeans:
                 i += 1
 
 
-        else:   #pendent de fer
 
-            self.centroids = np.random.rand(self.K, self.X.shape[1])
-            self.old_centroids =np.random.rand(self.K, self.X.shape[1])
+        elif self.options['km_init'].lower() == 'equal':
+
+            auxr = 0
+            while afegits != self.K:
+                if self.afegir(punts, self.X[auxr]):
+                    punts[afegits] = self.X[auxr]
+                    afegits += 1
+                    auxr += int(self.X.shape[0] / self.K)
+                else:
+                    auxr -= 100
+
+                i += 1
+
+
+        else:
+            print("Has de triar un tipus d'inicialització")
 
         self.centroids = punts
 
@@ -283,7 +296,6 @@ class KMeans:
         self.fit()
         wcd0 = self.whitinClassDistance(method)
         cadak += 1
-
 
         while cadak < max_K:
             self.K = cadak
