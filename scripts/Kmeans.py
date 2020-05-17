@@ -301,8 +301,10 @@ class KMeans:
             self.K = cadak
             self.fit()
             wcd = self.whitinClassDistance(method)
+            if wcd0 == 0:
+                wcd0 = 897873490
             aux = 100 - (100 * (wcd / wcd0))
-            if aux < 20:
+            if aux < 10:
                 self.K = cadak - 1
                 break
             else:

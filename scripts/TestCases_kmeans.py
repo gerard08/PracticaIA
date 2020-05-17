@@ -71,7 +71,7 @@ class TestCases(unittest.TestCase):
     def test_find_bestK(self):
         for ix, input in enumerate(self.test_cases['input']):
             km = KMeans(input, self.test_cases['K'][ix])
-            km.find_bestK(10)
+            km.find_bestK(10, 'intraclass')
             self.assertEqual(km.K, self.test_cases['bestK'][ix])
 
 
