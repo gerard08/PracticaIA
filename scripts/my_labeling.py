@@ -197,7 +197,7 @@ if __name__ == '__main__':
 
 
     #RETRIEVAL COMBINED
-    si = retrieval_combined(test_imgs[0:10], hola, resKmeans, "Shorts", "Brown")
+    si = retrieval_combined(test_imgs[0:10], hola, resKmeans, "Shorts", "Black")
     if len(si) != 0:
         visualize_retrieval(si, len(si))
     else:
@@ -208,10 +208,7 @@ if __name__ == '__main__':
     kmean_statistics(answer, 10)
 
 
-    #GET_SHAPE_ACCURACY
-    perc = get_shape_accuracy(hola, test_class_labels[0:10])
 
-    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
 
 
