@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Practica2IA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Practica2IA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="kmeans_statistics modficado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Kmeans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/my_labeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/my_labeling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,13 +250,6 @@
       <workItem from="1589672506701" duration="4908000" />
       <workItem from="1589679329824" duration="358000" />
       <workItem from="1589712212407" duration="6313000" />
-    </task>
-    <task id="LOCAL-00009" summary="He fet la funció de la distància entre pixels">
-      <created>1586376892781</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1586376892781</updated>
     </task>
     <task id="LOCAL-00010" summary="He fet funció per saber quin és el centroide del que està mes a prop cada pixel">
       <created>1586620522097</created>
@@ -579,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589715487300</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="kmeans_statistics modficado">
+      <created>1589727169738</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1589727169739</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +614,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Hem optimitzat la funció distance" />
     <MESSAGE value="Hem optimitzat MOOOOCHO el distance" />
     <MESSAGE value="Con coso ruben" />
     <MESSAGE value="NOU TEST CASES&#10;NOUS ARXIUS&#10;Acabada funció millor K" />
@@ -624,7 +638,8 @@
     <MESSAGE value="esta malament la funcio de withinclassdistance" />
     <MESSAGE value="arreglada funcio statistics" />
     <MESSAGE value="Ponerlo bonito" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ponerlo bonito" />
+    <MESSAGE value="kmeans_statistics modficado" />
+    <option name="LAST_COMMIT_MESSAGE" value="kmeans_statistics modficado" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585676728071">
@@ -687,7 +702,7 @@
     </state>
     <state width="532" height="445" key="GridCell.Tab.-1.right/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589619026363" />
     <state x="545" y="167" width="334" height="402" key="GridCell.Tab.-1.right/0.0.1366.768@0.0.1366.768" timestamp="1589589673198" />
-    <state width="1899" height="892" key="GridCell.Tab.0.bottom" timestamp="1589726795789">
+    <state width="1899" height="892" key="GridCell.Tab.0.bottom" timestamp="1589726985407">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1237" height="135" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589720880742" />
@@ -696,8 +711,8 @@
     <state width="755" height="951" key="GridCell.Tab.0.bottom/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667538702" />
     <state width="1323" height="166" key="GridCell.Tab.0.bottom/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589634337018" />
     <state width="531" height="448" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1589677378537" />
-    <state width="1899" height="892" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589726795789" />
-    <state width="1899" height="892" key="GridCell.Tab.0.center" timestamp="1589726795789">
+    <state width="1899" height="892" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589726985407" />
+    <state width="1899" height="892" key="GridCell.Tab.0.center" timestamp="1589726985407">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1237" height="135" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589720880742" />
@@ -706,8 +721,8 @@
     <state width="755" height="951" key="GridCell.Tab.0.center/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667538702" />
     <state width="1323" height="166" key="GridCell.Tab.0.center/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589634337018" />
     <state width="531" height="448" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1589677378537" />
-    <state width="1899" height="892" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589726795789" />
-    <state width="1899" height="892" key="GridCell.Tab.0.left" timestamp="1589726795789">
+    <state width="1899" height="892" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589726985407" />
+    <state width="1899" height="892" key="GridCell.Tab.0.left" timestamp="1589726985407">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1237" height="135" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589720880742" />
@@ -716,8 +731,8 @@
     <state width="755" height="951" key="GridCell.Tab.0.left/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667538702" />
     <state width="1323" height="166" key="GridCell.Tab.0.left/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589634337018" />
     <state width="531" height="448" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1589677378536" />
-    <state width="1899" height="892" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589726795789" />
-    <state width="1899" height="892" key="GridCell.Tab.0.right" timestamp="1589726795789">
+    <state width="1899" height="892" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589726985407" />
+    <state width="1899" height="892" key="GridCell.Tab.0.right" timestamp="1589726985407">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1237" height="135" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589720880742" />
@@ -726,7 +741,7 @@
     <state width="755" height="951" key="GridCell.Tab.0.right/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667538702" />
     <state width="1323" height="166" key="GridCell.Tab.0.right/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589634337018" />
     <state width="531" height="448" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1589677378537" />
-    <state width="1899" height="892" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589726795789" />
+    <state width="1899" height="892" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589726985407" />
     <state x="1062" y="292" width="531" height="448" key="GridCell.Tab.1.bottom" timestamp="1589677378536">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -832,8 +847,8 @@
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587768904613" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589464918205" />
     <state x="259" y="8" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589724470123" />
-    <state x="258" y="90" key="Vcs.Push.Dialog.v2" timestamp="1589715489366">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="387" y="139" key="Vcs.Push.Dialog.v2" timestamp="1589727173058">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589715489366" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848074671" />
@@ -841,6 +856,7 @@
     <state x="188" y="-938" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667524508" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589626429464" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1589593532464" />
+    <state x="387" y="139" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1589727173058" />
     <state width="691" height="393" key="XDebugger.FullValuePopup" timestamp="1589588754750">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
