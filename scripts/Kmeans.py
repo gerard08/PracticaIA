@@ -214,11 +214,13 @@ class KMeans:
             self.get_labels()
             self.get_centroids()
             difference = self.converges()
-            ar.append(Plot3DCloud(self))
+            #ar.append(Plot3DCloud(self))
 
             iter += 1
         self.num_iter = iter
-        plt.show()
+        #plt.show()
+
+        return iter
 
     def whitinClassDistance(self, type):
         """
@@ -290,7 +292,7 @@ class KMeans:
             self.fit()
             wcd = self.whitinClassDistance(method)
             aux = 100 - (100 * (wcd / wcd0))
-            if aux < 20:
+            if aux < 5:
                 self.K = cadak - 1
                 break
             else:

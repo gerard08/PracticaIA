@@ -60,13 +60,13 @@ def kmean_statistics(class_Kmeans, kmax):
     k = 2
     while (k <= class_Kmeans.K):
         starting_time = time()
-        class_Kmeans.k = k
+        #class_Kmeans.k = k
         print("------------ Attempt: k =", k, "----------------")
-        class_Kmeans.fit()
+        iter = class_Kmeans.fit()
         wcd = class_Kmeans.whitinClassDistance('fisher')
         end_time = time()
         time_until_converges = end_time - starting_time
-        print("Iterations: ", k)
+        print("Iterations: ", iter)
         print("Time until converges (s): ", time_until_converges)
         print("WCD: ", wcd)
         k += 1
@@ -106,7 +106,7 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
-    for el in test_imgs[0:1]:
+    for el in test_imgs[0:10]:
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
         answer.find_bestK(8,'fisher')
@@ -120,7 +120,7 @@ if __name__ == '__main__':
 
     #RETRIEVAL_BY_COLOR
     isok = []
-    retrievedc = retrievalByColor(test_imgs[0:1], resKmeans, ["Black"], isok)
+    retrievedc = retrievalByColor(test_imgs[0:10], resKmeans, ["Black"], isok)
     if len(isok) != 0:
         #GET_COLOR_ACCURACY
         percent = get_color_accuracy(resKmeans, test_color_labels[4:5])
@@ -159,9 +159,9 @@ if __name__ == '__main__':
     knntest = KNN(a, train_class_labels)
 
     #afegim les imatges sobre les que volem buscar
-    hola = knntest.predict(b[0:1], 8)
+    hola = knntest.predict(b[0:10], 8)
     #realitzem la busqueda sobre les etiquetes obtingudes
-    retrievalbyshape = Retrival_by_shape(test_imgs[0:1], hola, "Shorts")
+    retrievalbyshape = Retrival_by_shape(test_imgs[0:10], hola, "Shorts")
     if len(retrievalbyshape) == 0:
         print("No he trobat res, et puc buscar", classes)
     else:
@@ -169,7 +169,7 @@ if __name__ == '__main__':
 
 
     #RETRIEVAL COMBINED
-    si = retrieval_combined(test_imgs[0:1], hola, resKmeans, "Shorts", "Brown")
+    si = retrieval_combined(test_imgs[0:10], hola, resKmeans, "Shorts", "Brown")
     if len(si) != 0:
         visualize_retrieval(si, len(si))
     else:
@@ -182,7 +182,7 @@ if __name__ == '__main__':
 
 
     #GET_SHAPE_ACCURACY
-    perc = get_shape_accuracy(hola, test_class_labels[0:1])
+    perc = get_shape_accuracy(hola, test_class_labels[0:10])
 
     print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
