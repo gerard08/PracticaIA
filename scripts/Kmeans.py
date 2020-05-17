@@ -6,6 +6,7 @@ import utils
 import copy
 from time import time
 from scipy.spatial.distance import cdist
+from utils_data import *
 
 
 class KMeans:
@@ -154,7 +155,7 @@ class KMeans:
 
 
         if self.centroids is not None : self.old_centroids = copy.deepcopy(self.centroids)
-
+        ar = []
         #calculo els nous centroids
 
         centroids = {}
@@ -193,7 +194,7 @@ class KMeans:
             return False
 
 
-    def fit(self):
+    def fit(self, pr=False):
         """
         Runs K-Means algorithm until it converges or until the number
         of iterations is smaller than the maximum number of iterations.
@@ -205,6 +206,7 @@ class KMeans:
         self._init_centroids()
         difference = False
         iter = 0
+        ar = []
 
         starting_time = time()
         #Comprova si convergeix i si el num d'iteracions es menor al permes
@@ -212,12 +214,11 @@ class KMeans:
             self.get_labels()
             self.get_centroids()
             difference = self.converges()
-            iter += 1
-        finishing_time = time()
-        self.num_iter = iter
-        time_until_converges = finishing_time - starting_time
+            ar.append(Plot3DCloud(self))
 
-        return iter, time_until_converges
+            iter += 1
+        self.num_iter = iter
+        plt.show()
 
     def whitinClassDistance(self, type):
         """
@@ -237,19 +238,6 @@ class KMeans:
             dista = distance(self.centroids, self.centroids)
             wcd = np.sum(np.median(dista, axis=1))
 
-
-
-
-            '''for el in self.centroids[0].shape[0]:
-                for ol in enumerate(el):
-                    for i in range(0,len(self.centroids[0].shape[1])):
-                        wcd += np.absolute(el - self.centroids[0][i])
-                    answ.append(wcd/(len(self.centroids[0]) - 1))
-                    wcd = 0
-
-
-            for el in answ:
-                wcd += el'''
 
         elif type == 'intraclass':
 
@@ -291,7 +279,8 @@ class KMeans:
         self.fit()
         wcd0 = self.whitinClassDistance(method)
         cadak += 1
-        
+
+
         while cadak < max_K:
             self.K = cadak
             self.fit()
@@ -303,7 +292,6 @@ class KMeans:
             else:
                 wcd0 = copy.deepcopy(wcd)
                 cadak += 1
-
 
 
 def distance(X, C):

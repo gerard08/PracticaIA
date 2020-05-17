@@ -89,11 +89,11 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
-    for el in test_imgs[0:50]:
+    for el in test_imgs[4:5]:
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
         answer.find_bestK(8,'fisher')
-        answer.fit()
+        answer.fit(True)
         #Plot3DCloud(answer)
         #visualize_k_means(answer, [80, 60, 3])
         resKmeans.append(get_colors(answer.centroids))
@@ -103,9 +103,9 @@ if __name__ == '__main__':
 
     #retrieve by color
     isok = []
-    retrievedc = retrievalByColor(test_imgs[0:50], resKmeans, ["Blue"], isok)
+    retrievedc = retrievalByColor(test_imgs[4:5], resKmeans, ["Black"], isok)
     if len(isok) != 0:
-        percent = get_color_accuracy(resKmeans, test_color_labels[0:50])
+        percent = get_color_accuracy(resKmeans, test_color_labels[4:5])
         print("hem encertat un ", percent, "% en l'etiquetatge de color")
     answ = []
 
