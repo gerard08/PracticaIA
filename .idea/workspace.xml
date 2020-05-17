@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Practica2IA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Practica2IA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Kmeans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/my_labeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/my_labeling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,14 +232,7 @@
       <workItem from="1589622626803" duration="26034000" />
       <workItem from="1589672506701" duration="4908000" />
       <workItem from="1589679329824" duration="358000" />
-      <workItem from="1589712212407" duration="733000" />
-    </task>
-    <task id="LOCAL-00004" summary="He fet la funció _init_X">
-      <created>1585676826321</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1585676826321</updated>
+      <workItem from="1589712212407" duration="1025000" />
     </task>
     <task id="LOCAL-00005" summary="He fet la funció _init_X">
       <created>1585735481381</created>
@@ -581,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589667522249</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="arreglada funcio statistics">
+      <created>1589713194192</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1589713194193</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="mini optimitzacions" />
     <MESSAGE value="lala" />
     <MESSAGE value="Hem optimitzat la funció distance" />
     <MESSAGE value="Hem optimitzat MOOOOCHO el distance" />
@@ -627,7 +622,8 @@
     <MESSAGE value="get_color_accuracy arreglada" />
     <MESSAGE value="get_shape_accuracy acabada" />
     <MESSAGE value="esta malament la funcio de withinclassdistance" />
-    <option name="LAST_COMMIT_MESSAGE" value="esta malament la funcio de withinclassdistance" />
+    <MESSAGE value="arreglada funcio statistics" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglada funcio statistics" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585676728071">
@@ -652,10 +648,10 @@
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
     <state x="430" y="231" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589554507543" />
-    <state x="791" y="-1003" key="CommitChangelistDialog2" timestamp="1589667520316">
-      <screen x="-199" y="-1080" width="1920" height="1080" />
+    <state x="339" y="27" width="751" height="653" key="CommitChangelistDialog2" timestamp="1589713193166">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="312" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587809563162" />
+    <state x="339" y="27" width="751" height="653" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589713193166" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848070270" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586877316058" />
     <state x="791" y="-1003" key="CommitChangelistDialog2/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667520316" />
@@ -829,10 +825,10 @@
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587768904613" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589464918205" />
-    <state x="188" y="-938" key="Vcs.Push.Dialog.v2" timestamp="1589667524508">
-      <screen x="-199" y="-1080" width="1920" height="1080" />
+    <state x="258" y="90" key="Vcs.Push.Dialog.v2" timestamp="1589713196586">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587809565743" />
+    <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589713196586" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848074671" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586877318741" />
     <state x="188" y="-938" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667524508" />
@@ -979,23 +975,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/my_labeling.py</url>
-          <line>117</line>
+          <line>118</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/my_labeling.py</url>
-          <line>114</line>
+          <line>115</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scripts/my_labeling.py</url>
-          <line>101</line>
+          <line>102</line>
           <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/Kmeans.py</url>
-          <line>216</line>
-          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

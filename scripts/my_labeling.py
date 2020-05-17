@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import cv2
 from PIL import Image
 from PIL import ImageOps
+from time import time
 
 def retrievalByColor(imatges, resKmeans, llistaC, isok = None):
     answ = []
