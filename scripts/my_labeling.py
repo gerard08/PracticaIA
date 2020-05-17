@@ -193,7 +193,7 @@ if __name__ == '__main__':
     #GET_SHAPE_ACCURACY
     perc = get_shape_accuracy(hola, test_class_labels[0:10])
 
-    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
+    print("We shape labbeled a", perc, "% of the images")
 
 
     #RETRIEVAL COMBINED
@@ -207,11 +207,6 @@ if __name__ == '__main__':
     #KMEAN_STATISTICS
     kmean_statistics(answer, 10)
 
-
-    #GET_SHAPE_ACCURACY
-    perc = get_shape_accuracy(hola, test_class_labels[0:10])
-
-    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
 
 
