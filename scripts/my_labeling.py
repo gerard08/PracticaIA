@@ -33,16 +33,22 @@ def retrievalByColor(imatges, resKmeans, llistaC, isok = None):
 
 def kmean_statistics(class_Kmeans, kmax):
     # cal mostrar WCD, nombre d'iteracions que ha necessitat per convergir, etc.
-    k=2
-    while(k<=kmax):
+
+    class_Kmeans.find_bestK(kmax,'fisher')
+    k = 2
+    while (k <= class_Kmeans.K):
+        starting_time = time()
         class_Kmeans.k = k
-        iterations, time_until_converges = class_Kmeans.fit()
-        wcd = class_Kmeans.whitinClassDistance()
-        print("------------ Attempt: k =",k,"----------------")
-        print("Iterations: ",iterations)
-        print("Time until converges (s): ",time_until_converges)
-        print("WCD: ",wcd)
-        k = k + 1
+        print("------------ Attempt: k =", k, "----------------")
+        class_Kmeans.fit()
+        wcd = class_Kmeans.whitinClassDistance('fisher')
+        end_time = time()
+        time_until_converges = end_time - starting_time
+        print("Iterations: ", k)
+        print("Time until converges (s): ", time_until_converges)
+        print("WCD: ", wcd)
+        k += 1
+
 
 def Retrival_by_shape(llimatges, etiquetes, cerca):
     llista = []
@@ -101,7 +107,7 @@ if __name__ == '__main__':
         #print(get_colors(answer.centroids))
 
 
-    #retrieve by color
+    ''''#retrieve by color
     isok = []
     retrievedc = retrievalByColor(test_imgs[4:5], resKmeans, ["Black"], isok)
     if len(isok) != 0:
@@ -121,7 +127,7 @@ if __name__ == '__main__':
                 imagenconborde = ImageOps.expand(im, border=5, fill="red")
             answ.append(imagenconborde)
 
-        visualize_retrieval(answ, len(answ))
+        visualize_retrieval(answ, len(answ))'''
 
     #stadistics
 
@@ -129,7 +135,7 @@ if __name__ == '__main__':
 ## You can start coding your functions here
 
 #kmeans_statistics
-#kmean_statistics(answer, 10)
+    kmean_statistics(answer, 10)
 ''''
 #passem les imatges en b/n
 answ = []

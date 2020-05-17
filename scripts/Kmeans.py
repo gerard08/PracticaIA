@@ -208,7 +208,7 @@ class KMeans:
         iter = 0
         ar = []
 
-        starting_time = time()
+
         #Comprova si convergeix i si el num d'iteracions es menor al permes
         while difference == False and iter <= self.options['max_iter']:
             self.get_labels()
@@ -218,7 +218,7 @@ class KMeans:
 
             iter += 1
         self.num_iter = iter
-        plt.show()
+        #plt.show()
 
     def whitinClassDistance(self, type):
         """
@@ -229,6 +229,7 @@ class KMeans:
         ##  AND CHANGE FOR YOUR OWN CODE
         ##SUMA DE LES MITJANES DE LES DISTÀNCIES ENTRE TOTS ELS PARELLS DE CLASSSES
         #######################################################
+
         if type == 'interclass':
 
             answ = []
