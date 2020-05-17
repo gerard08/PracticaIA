@@ -218,7 +218,7 @@ class KMeans:
 
             iter += 1
         self.num_iter = iter
-        #plt.show()
+        plt.show()
 
     def whitinClassDistance(self, type):
         """
@@ -227,9 +227,10 @@ class KMeans:
         #######################################################
         ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
         ##  AND CHANGE FOR YOUR OWN CODE
-        ##SUMA DE LES MITJANES DE LES DISTÀNCIES ENTRE TOTS ELS PARELLS DE CLASSSES
         #######################################################
 
+        #DIFERENTS HEURISTIQUES PER BEST_K
+        #Interclass
         if type == 'interclass':
 
             answ = []
@@ -240,6 +241,7 @@ class KMeans:
             wcd = np.sum(np.median(dista, axis=1))
 
 
+        #Intraclass
         elif type == 'intraclass':
 
             dist = distance(self.X, self.centroids)
@@ -254,6 +256,7 @@ class KMeans:
             wcd = total / total_dist.shape[0]
 
 
+        #Fisher
         elif type == 'fisher':
             wcdinter = self.whitinClassDistance('interclass')
             wcdintra = self.whitinClassDistance('intraclass')
