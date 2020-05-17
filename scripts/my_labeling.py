@@ -176,15 +176,16 @@ if __name__ == '__main__':
         print("No he trobat res")
 
 
+    #GET_SHAPE_ACCURACY
+    perc = get_shape_accuracy(hola, test_class_labels[0:10])
+    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
+
 
     #KMEAN_STATISTICS
     kmean_statistics(answer, 10)
 
 
-    #GET_SHAPE_ACCURACY
-    perc = get_shape_accuracy(hola, test_class_labels[0:10])
 
-    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
 
 
