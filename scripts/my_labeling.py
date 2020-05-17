@@ -122,11 +122,11 @@ if __name__ == '__main__':
     if len(isok) != 0:
         #GET_COLOR_ACCURACY
         percent = get_color_accuracy(resKmeans, test_color_labels[4:5])
-        print("hem encertat un ", percent, "% en l'etiquetatge de color")
+        print("Hem encertat un ", percent, "% en l'etiquetatge de color")
     answ = []
 
     if len(retrievedc) == 0:
-        print("cap imatge trobada")
+        print("Cap imatge trobada")
 
     else:
         for i,el in enumerate(retrievedc):
@@ -161,14 +161,15 @@ if __name__ == '__main__':
     #realitzem la busqueda sobre les etiquetes obtingudes
     retrievalbyshape = Retrival_by_shape(test_imgs[0:50], hola, "Shorts")
     if len(retrievalbyshape) == 0:
-        print("no he trobat res :(, et puc buscar", classes)
+        print("No he trobat res, et puc buscar", classes)
     else:
         visualize_retrieval(retrievalbyshape, len(retrievalbyshape))
 
 
     #GET_SHAPE_ACCURACY
     perc = get_shape_accuracy(hola, test_class_labels[0:50])
-    print(perc, "percent d'accuracy en la detecció de forma")
+
+    print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
 
     #RETRIEVAL COMBINED
@@ -176,7 +177,7 @@ if __name__ == '__main__':
     if len(si) != 0:
         visualize_retrieval(si, len(si))
     else:
-        print("no he trobat res")
+        print("No he trobat res")
 
 
     #KMEAN_STATISTICS

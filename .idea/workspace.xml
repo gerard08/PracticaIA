@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="28fe6d83-cc9e-4dc2-bd0b-9d122740e403" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Kmeans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/my_labeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/my_labeling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,14 +233,7 @@
       <workItem from="1589622626803" duration="26034000" />
       <workItem from="1589672506701" duration="4908000" />
       <workItem from="1589679329824" duration="358000" />
-      <workItem from="1589712212407" duration="2768000" />
-    </task>
-    <task id="LOCAL-00006" summary="He fet la funció init centroids, pero necessita optimització">
-      <created>1585838640638</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1585838640638</updated>
+      <workItem from="1589712212407" duration="3083000" />
     </task>
     <task id="LOCAL-00007" summary="He fet la funció init centroids, pero necessita optimització">
       <created>1585849052815</created>
@@ -579,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589713244184</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Ponerlo bonito">
+      <created>1589715105863</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1589715105863</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lala" />
     <MESSAGE value="Hem optimitzat la funció distance" />
     <MESSAGE value="Hem optimitzat MOOOOCHO el distance" />
     <MESSAGE value="Con coso ruben" />
@@ -625,7 +623,8 @@
     <MESSAGE value="get_shape_accuracy acabada" />
     <MESSAGE value="esta malament la funcio de withinclassdistance" />
     <MESSAGE value="arreglada funcio statistics" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglada funcio statistics" />
+    <MESSAGE value="Ponerlo bonito" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ponerlo bonito" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585676728071">
@@ -650,10 +649,10 @@
     </state>
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586619105229" />
     <state x="430" y="231" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1589554507543" />
-    <state x="339" y="27" width="751" height="653" key="CommitChangelistDialog2" timestamp="1589713243212">
+    <state x="339" y="27" width="751" height="653" key="CommitChangelistDialog2" timestamp="1589715105010">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="339" y="27" width="751" height="653" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589713243212" />
+    <state x="339" y="27" width="751" height="653" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589715105010" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848070270" />
     <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586877316058" />
     <state x="791" y="-1003" key="CommitChangelistDialog2/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667520316" />
@@ -827,10 +826,10 @@
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586377629179" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768/-199.-1080.1920.1080@0.0.1366.768" timestamp="1587768904613" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589464918205" />
-    <state x="258" y="90" key="Vcs.Push.Dialog.v2" timestamp="1589713246972">
+    <state x="258" y="90" key="Vcs.Push.Dialog.v2" timestamp="1589715109707">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589713246972" />
+    <state x="258" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589715109707" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728/-199.-1080.1920.1040@0.0.1366.728" timestamp="1586848074671" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586877318741" />
     <state x="188" y="-938" key="Vcs.Push.Dialog.v2/0.0.1366.768/-199.-1080.1920.1080@-199.-1080.1920.1080" timestamp="1589667524508" />
