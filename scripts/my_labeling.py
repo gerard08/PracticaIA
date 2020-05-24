@@ -67,13 +67,13 @@ def kmean_statistics(class_Kmeans, kmax):
         print("------------ Attempt: k =", k, "----------------")
 
         it, time_converges = class_Kmeans.fit()
-        wcd = class_Kmeans.whitinClassDistance('intraclass')
+        wcd = class_Kmeans.whitinClassDistance('fisher')
 
         print("Iterations: ", it)
         print("Time until converges (s): ", time_converges)
         print("WCD: ", wcd)
         k += 1
-    class_Kmeans.find_bestK(kmax, 'intraclass')
+    class_Kmeans.find_bestK(kmax, 'fisher')
     print("Best K: ", class_Kmeans.K)
 
 
@@ -109,13 +109,12 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
-    print("go")
     time_until_converges = []
     for el in test_imgs[0:50]:
         starting_time = time()
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
-        answer.find_bestK(10, 'fisher')
+        answer.find_bestK(10, 'intraclass')
         answer.fit()
         end_time = time()
         timet = end_time - starting_time
@@ -204,7 +203,7 @@ if __name__ == '__main__':
 
 
     #KMEAN_STATISTICS
-    #kmean_statistics(answer, 20)
+    kmean_statistics(answer, 20)
 
 
 
