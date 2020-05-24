@@ -60,21 +60,20 @@ def retrieval_combined(imatges, formes, colors, forma, color):
 #FUNCIONS D'ANALISI QUANTITATIU
 def kmean_statistics(class_Kmeans, kmax):
     # cal mostrar WCD, nombre d'iteracions que ha necessitat per convergir, etc.
-
-    class_Kmeans.find_bestK(kmax,'fisher')
     k = 2
     while (k <= kmax):
-        starting_time = time()
-        class_Kmeans.k = k
+        class_Kmeans.K = k
         print("------------ Attempt: k =", k, "----------------")
-        class_Kmeans.fit()
+
+        it, time_converges = class_Kmeans.fit()
         wcd = class_Kmeans.whitinClassDistance('fisher')
-        end_time = time()
-        time_until_converges = end_time - starting_time
-        print("Iterations: ", k)
-        print("Time until converges (s): ", time_until_converges)
+
+        print("Iterations: ", it)
+        print("Time until converges (s): ", time_converges)
         print("WCD: ", wcd)
         k += 1
+    class_Kmeans.find_bestK(kmax, 'fisher')
+    print("Best K: ", class_Kmeans.K)
 
 
 def get_shape_accuracy(resKNN, labels):
@@ -203,7 +202,7 @@ if __name__ == '__main__':
 
 
     #KMEAN_STATISTICS
-    kmean_statistics(answer, 10)
+    kmean_statistics(answer, 20)
 
 
 

@@ -223,6 +223,7 @@ class KMeans:
 
 
         #Comprova si convergeix i si el num d'iteracions es menor al permes
+        starting_time = time()
         while difference == False and iter <= self.options['max_iter']:
             self.get_labels()
             self.get_centroids()
@@ -230,8 +231,11 @@ class KMeans:
             #ar.append(Plot3DCloud(self))
 
             iter += 1
+        end_time = time()
+        time_until_converges = end_time - starting_time
         self.num_iter = iter
         #plt.show()
+        return iter, time_until_converges
 
     def whitinClassDistance(self, type):
         """
@@ -342,6 +346,7 @@ def get_colors(centroids):
     array_11D = utils.get_color_prob(centroids)
 
     return utils.colors[np.argmax(array_11D, axis=1)]
+
 
 
 
