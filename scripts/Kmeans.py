@@ -308,7 +308,7 @@ class KMeans:
             if wcd0 == 0:
                 wcd0 = 897873490
             aux = 100 - (100 * (wcd / wcd0))
-            if aux < 10:
+            if aux < 20:
                 self.K = cadak - 1
                 break
             else:

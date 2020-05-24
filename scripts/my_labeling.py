@@ -66,13 +66,13 @@ def kmean_statistics(class_Kmeans, kmax):
         print("------------ Attempt: k =", k, "----------------")
 
         it, time_converges = class_Kmeans.fit()
-        wcd = class_Kmeans.whitinClassDistance('fisher')
+        wcd = class_Kmeans.whitinClassDistance('intraclass')
 
         print("Iterations: ", it)
         print("Time until converges (s): ", time_converges)
         print("WCD: ", wcd)
         k += 1
-    class_Kmeans.find_bestK(kmax, 'fisher')
+    class_Kmeans.find_bestK(kmax, 'intraclass')
     print("Best K: ", class_Kmeans.K)
 
 
@@ -108,12 +108,13 @@ if __name__ == '__main__':
 
     #Kmeans
     resKmeans = []
+    print("go")
     time_until_converges = []
-    for el in test_imgs[0:20]:
+    for el in test_imgs[0:50]:
         starting_time = time()
         answer = KMeans(el)
-        answer.options['km_init'] = 'equal'
-        answer.find_bestK(8,'intraclass')
+        answer.options['km_init'] = 'random'
+        answer.find_bestK(10, 'intraclass')
         answer.fit()
         end_time = time()
         timet = end_time - starting_time
@@ -129,10 +130,10 @@ if __name__ == '__main__':
 
     #RETRIEVAL_BY_COLOR
     isok = []
-    retrievedc = retrievalByColor(test_imgs[0:20], resKmeans, ["Black"], isok)
+    retrievedc = retrievalByColor(test_imgs[0:50], resKmeans, ["Black"], isok)
     if len(isok) != 0:
         #GET_COLOR_ACCURACY
-        percent = get_color_accuracy(resKmeans, test_color_labels[0:10])
+        percent = get_color_accuracy(resKmeans, test_color_labels[0:50])
         print("We color labbeled a", percent, "% of the images")
     answ = []
 
@@ -168,10 +169,10 @@ if __name__ == '__main__':
     knntest = KNN(a, train_class_labels)
 
     #afegim les imatges sobre les que volem buscar
-    hola = knntest.predict(b[0:20], 8)
+    hola = knntest.predict(b[0:50], 8)
     #realitzem la busqueda sobre les etiquetes obtingudes
     isok = []
-    retrievalbyshape = Retrival_by_shape(test_imgs[0:20], hola, "Dresses", isok)
+    retrievalbyshape = Retrival_by_shape(test_imgs[0:50], hola, "Dresses", isok)
     if len(retrievalbyshape) == 0:
         print("No he trobat res, et puc buscar", classes)
     else:
@@ -188,13 +189,13 @@ if __name__ == '__main__':
 
 
     #GET_SHAPE_ACCURACY
-    perc = get_shape_accuracy(hola, test_class_labels[0:20])
+    perc = get_shape_accuracy(hola, test_class_labels[0:50])
 
     print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
 
     #RETRIEVAL COMBINED
-    si = retrieval_combined(test_imgs[0:20], hola, resKmeans, "Shorts", "Black")
+    si = retrieval_combined(test_imgs[0:50], hola, resKmeans, "Shorts", "Black")
     if len(si) != 0:
         visualize_retrieval(si, len(si))
     else:
@@ -202,7 +203,7 @@ if __name__ == '__main__':
 
 
     #KMEAN_STATISTICS
-    kmean_statistics(answer, 20)
+    #kmean_statistics(answer, 20)
 
 
 
