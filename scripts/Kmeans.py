@@ -317,7 +317,7 @@ class KMeans:
                     cadak += 1
             else:
                 aux = 100 - (100 * (wcd / wcd0))
-                if aux < 30:
+                if aux < 10:
                     self.K = cadak - 1
                     break
                 else:
