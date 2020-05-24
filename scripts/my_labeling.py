@@ -61,6 +61,7 @@ def retrieval_combined(imatges, formes, colors, forma, color):
 def kmean_statistics(class_Kmeans, kmax):
     # cal mostrar WCD, nombre d'iteracions que ha necessitat per convergir, etc.
     k = 2
+    print("gerard borra aquest missatge")
     while (k <= kmax):
         class_Kmeans.K = k
         print("------------ Attempt: k =", k, "----------------")
@@ -114,7 +115,7 @@ if __name__ == '__main__':
         starting_time = time()
         answer = KMeans(el)
         answer.options['km_init'] = 'random'
-        answer.find_bestK(10, 'intraclass')
+        answer.find_bestK(10, 'fisher')
         answer.fit()
         end_time = time()
         timet = end_time - starting_time

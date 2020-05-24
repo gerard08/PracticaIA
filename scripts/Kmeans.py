@@ -305,16 +305,24 @@ class KMeans:
             self.K = cadak
             self.fit()
             wcd = self.whitinClassDistance(method)
-            if wcd0 == 0:
-                wcd0 = 897873490
-            aux = 100 - (100 * (wcd / wcd0))
-            if aux < 20:
-                self.K = cadak - 1
-                break
+            if method == 'interclass':
+                if wcd0 == 0:
+                    wcd0 = 897873490
+                aux = 100 - (100 * (wcd0 / wcd))
+                if aux < 5 and aux > 0:
+                    self.K = cadak - 1
+                    break
+                else:
+                    wcd0 = copy.deepcopy(wcd)
+                    cadak += 1
             else:
-                wcd0 = copy.deepcopy(wcd)
-                cadak += 1
-
+                aux = 100 - (100 * (wcd / wcd0))
+                if aux < 30:
+                    self.K = cadak - 1
+                    break
+                else:
+                    wcd0 = copy.deepcopy(wcd)
+                    cadak += 1
 
 def distance(X, C):
     """
