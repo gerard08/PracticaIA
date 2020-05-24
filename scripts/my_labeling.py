@@ -79,7 +79,7 @@ def kmean_statistics(class_Kmeans, kmax):
 
 def get_shape_accuracy(resKNN, labels):
     si = 0
-    for i, el in enumerate(labels):
+    for i, el in enumerate(resKNN):
         if el == labels[i]:
             si += 1
     return (si/len(resKNN))*100
@@ -97,15 +97,6 @@ def get_color_accuracy(resKmeans, labels):
     return (encert/len(resKmeans))*100
 
 
-def get_shape_accuracy(resKNN, labels):
-    si = 0
-    for i, el in enumerate(labels):
-        if el == labels[i]:
-            si += 1
-    return (si/len(resKNN))*100
-
-
-
 
 if __name__ == '__main__':
 
@@ -119,7 +110,7 @@ if __name__ == '__main__':
     #Kmeans
     resKmeans = []
     time_until_converges = []
-    for el in test_imgs[0:10]:
+    for el in test_imgs[0:20]:
         starting_time = time()
         answer = KMeans(el)
         answer.options['km_init'] = 'equal'
@@ -139,7 +130,7 @@ if __name__ == '__main__':
 
     #RETRIEVAL_BY_COLOR
     isok = []
-    retrievedc = retrievalByColor(test_imgs[0:10], resKmeans, ["Black"], isok)
+    retrievedc = retrievalByColor(test_imgs[0:20], resKmeans, ["Black"], isok)
     if len(isok) != 0:
         #GET_COLOR_ACCURACY
         percent = get_color_accuracy(resKmeans, test_color_labels[0:10])
@@ -178,10 +169,10 @@ if __name__ == '__main__':
     knntest = KNN(a, train_class_labels)
 
     #afegim les imatges sobre les que volem buscar
-    hola = knntest.predict(b[0:10], 8)
+    hola = knntest.predict(b[0:20], 8)
     #realitzem la busqueda sobre les etiquetes obtingudes
     isok = []
-    retrievalbyshape = Retrival_by_shape(test_imgs[0:10], hola, "Shorts", isok)
+    retrievalbyshape = Retrival_by_shape(test_imgs[0:20], hola, "Dresses", isok)
     if len(retrievalbyshape) == 0:
         print("No he trobat res, et puc buscar", classes)
     else:
@@ -198,13 +189,13 @@ if __name__ == '__main__':
 
 
     #GET_SHAPE_ACCURACY
-    perc = get_shape_accuracy(hola, test_class_labels[0:10])
+    perc = get_shape_accuracy(hola, test_class_labels[0:20])
 
     print("Hem encertat un ", perc, "% en l'etiquetatge de forma")
 
 
     #RETRIEVAL COMBINED
-    si = retrieval_combined(test_imgs[0:10], hola, resKmeans, "Shorts", "Black")
+    si = retrieval_combined(test_imgs[0:20], hola, resKmeans, "Shorts", "Black")
     if len(si) != 0:
         visualize_retrieval(si, len(si))
     else:
