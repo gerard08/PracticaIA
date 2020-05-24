@@ -1,5 +1,5 @@
-__authors__ = 'TO_BE_FILLED'
-__group__ = 'TO_BE_FILLED'
+__authors__ = '1531236, 1532874, 1526000'
+__group__ = 'DL.15'
 
 import numpy as np
 from Kmeans import *
@@ -134,8 +134,8 @@ if __name__ == '__main__':
         resKmeans.append(get_colors(answer.centroids))
         #print(answer.centroids)
         #print(get_colors(answer.centroids))
-    time = np.median(np.array(time_until_converges))
-    print(time)
+    temps = np.median(np.array(time_until_converges))
+    print(temps)
 
     #RETRIEVAL_BY_COLOR
     isok = []
@@ -211,8 +211,8 @@ if __name__ == '__main__':
         print("No he trobat res")
 
 
-    ''''#KMEAN_STATISTICS
-    kmean_statistics(answer, 10)'''
+    #KMEAN_STATISTICS
+    kmean_statistics(answer, 10)
 
 
 
